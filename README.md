@@ -1,4 +1,4 @@
-# Flask/Vue/Webpack/Typescript/Bootstrap Starter template
+# A website for creating paper wallets for NANO with ease
 
 # Development
 
