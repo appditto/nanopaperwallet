@@ -187,3 +187,12 @@ body{
       @include box-shadow(0 1rem 2rem -0.25rem rgba(map-get($theme-colors, light), 0.25));
       @include transform(translate(0,-0.35rem));
 }
+
+.logo{
+      width: 8rem;
+}
+@include respond-above(md){
+      .logo{
+            width: 10rem;
+      }    
+}
