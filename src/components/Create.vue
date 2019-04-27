@@ -2,6 +2,8 @@
   <div class="overflow-x-hidden" id="create-section">
       <Navbar :showButton=true></Navbar>
       <CreateHero/>
+      <CreateGenerateBanner/>
+      <CreateListAndPrint/>
       <Footer/>
   </div>
 </template>
@@ -10,6 +12,8 @@
 import Vue from "vue";
 import Navbar from "./Navbar.vue";
 import CreateHero from "./CreateHero.vue";
+import CreateGenerateBanner from "./CreateGenerateBanner.vue";
+import CreateListAndPrint from "./CreateListAndPrint.vue";
 import Footer from "./Footer.vue";
 
 export default Vue.extend({
@@ -17,6 +21,8 @@ export default Vue.extend({
   components: {
     Navbar,
     CreateHero,
+    CreateGenerateBanner,
+    CreateListAndPrint,
     Footer
   }
 });

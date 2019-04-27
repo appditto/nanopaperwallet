@@ -59,55 +59,6 @@
         </div>
       </div>
     </div>
-    <div class="section mt-4">
-      <div class="container-flex bg-footer py-5">
-        <div class="row d-flex justify-content-center align-items-center">
-          <span class="h2 text-light">Design:</span>
-          <select class="ml-2 mr-4 dropdown-header" id="design">
-            <option value="a" selected="selected">A</option>
-            <option value="b">B</option>
-            <option value="c">C</option>
-            <option value="d">D</option>
-          </select>
-          <span class="h2 text-light">Add</span>
-          <select class="mx-2 dropdown-header" id="amount">
-            <option value="1" selected="selected">1</option>
-            <option value="5">5</option>
-            <option value="10">10</option>
-          </select>
-          <span class="h2 text-light">more paper wallets</span>
-          <button class="btn btn-lg btn-light btn-light-shadow text-primary w600 px-4 ml-4">Generate</button>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-center align-items-center mt-2">
-        <img class="icon-2" src="../assets/img/arrow.svg">
-      </div>
-    </div>
-    <div class="section">
-      <div class="container-my mx-auto py-3">
-        <div class="row d-flex justify-content-center align-middle">
-          <div class="col-12">
-            <h2 class="w700 text-center text-primary">List of Generated Wallets</h2>
-          </div>
-          <div class="col-12">
-            <textarea class="w-100 text-primary h5 text-area" id="generatedwallets"></textarea>
-          </div>
-
-          <div class="col-12">
-            <div class="row d-flex justify-content-center">
-              <button
-                class="btn btn-lg btn-my btn-my-shadow text-light w600 px-4 px-lg-5 mt-3"
-              >Print Everything Below</button>
-            </div>
-          </div>
-          <div class="col-11 paper mt-4 px-5 py-4 mb-5">
-            <img class="w-100 my-4" src="../assets/img/paperwallet2.svg">
-            <img class="w-100 my-4" src="../assets/img/paperwallet1.svg">
-            <img class="w-100 my-4" src="../assets/img/paperwallet2.svg">
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -115,6 +66,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "CreateHero"
+  name: "CreateHero",
 });
 </script>
