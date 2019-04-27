@@ -8,7 +8,7 @@
             <span class="text-primary">paper wallets</span>
             <br>for NANO with ease
           </h1>
-          <button @click="this.$router.push('Home')"
+          <button @click="openCreatePage()"
             class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 my-3 mx-auto mx-lg-2"
           >Let's Start</button>
         </div>
@@ -23,7 +23,7 @@
               <br>for NANO with ease
             </h1>
             <div class="row d-flex justify-content-center">
-              <button class="btn btn-lg btn-my text-light w600 px-5 mt-2">Let's Start</button>
+              <button @click="openCreatePage()" class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 mt-2">Let's Start</button>
             </div>
           </div>
         </div>
@@ -36,6 +36,11 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "Hero"
+  name: "Hero",
+  methods:{
+    openCreatePage: function (){
+      window.open("/create", "_blank");
+    }
+  }
 });
 </script>
