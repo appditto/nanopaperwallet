@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1340px" height="320px" viewBox="0 0 1340 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Rectangle Copy 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="47.1485854%" x2="0%" y2="52.8514146%" id="linearGradient-1">
+            <stop stop-color="#2020B5" offset="0%"></stop>
+            <stop stop-color="#2677FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,0 L1334,0 C1337.31371,-6.08718376e-16 1340,2.6862915 1340,6 L1340,314 C1340,317.313708 1337.31371,320 1334,320 L0,320 L0,0 Z" id="Rectangle-Copy-16" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>

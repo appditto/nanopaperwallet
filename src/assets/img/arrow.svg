@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="30px" viewBox="0 0 56 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="37.5%" x2="0%" y2="62.5%" id="linearGradient-1">
+            <stop stop-color="#2020B5" offset="0%"></stop>
+            <stop stop-color="#2677FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop-copy" transform="translate(-692.000000, -3817.000000)" fill="url(#linearGradient-1)">
+            <g id="Group-17" transform="translate(250.000000, 3015.000000)">
+                <path d="M444.828427,802 L495.171573,802 C496.276142,802 497.171573,802.895431 497.171573,804 C497.171573,804.530433 496.960859,805.039141 496.585786,805.414214 L471.414214,830.585786 C470.633165,831.366835 469.366835,831.366835 468.585786,830.585786 L443.414214,805.414214 C442.633165,804.633165 442.633165,803.366835 443.414214,802.585786 C443.789286,802.210714 444.297994,802 444.828427,802 Z" id="arrow"></path>
+            </g>
+        </g>
+    </g>
+</svg>

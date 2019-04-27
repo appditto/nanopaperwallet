@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="97px" height="98px" viewBox="0 0 97 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>wallet</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.01" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="100%" y1="5.12465374%" x2="0%" y2="94.8753463%" id="linearGradient-2">
+            <stop stop-color="#2020B5" offset="0%"></stop>
+            <stop stop-color="#2677FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop-copy" transform="translate(-321.000000, -3519.000000)">
+            <g id="Group-17" transform="translate(250.000000, 3015.000000)">
+                <g id="Group-35" transform="translate(0.000000, 186.000000)">
+                    <g id="Group-34" transform="translate(70.000000, 317.000000)">
+                        <g id="wallet">
+                            <polygon id="Path" fill="url(#radialGradient-1)" points="0 0 100 0 100 100 0 100"></polygon>
+                            <path d="M85.4,75 L85.4,79.1666667 C85.4,83.75 81.65,87.5 77.0666667,87.5 L18.7333333,87.5 C14.1083333,87.5 10.4,83.75 10.4,79.1666667 L10.4,20.8333333 C10.4,16.25 14.1083333,12.5 18.7333333,12.5 L77.0666667,12.5 C81.65,12.5 85.4,16.25 85.4,20.8333333 L85.4,25 L47.9,25 C43.275,25 39.5666667,28.75 39.5666667,33.3333333 L39.5666667,66.6666667 C39.5666667,71.25 43.275,75 47.9,75 L85.4,75 Z M47.9,66.6666667 L89.5666667,66.6666667 L89.5666667,33.3333333 L47.9,33.3333333 L47.9,66.6666667 Z M64.5666667,56.25 C61.1083333,56.25 58.3166667,53.4583333 58.3166667,50 C58.3166667,46.5416667 61.1083333,43.75 64.5666667,43.75 C68.025,43.75 70.8166667,46.5416667 70.8166667,50 C70.8166667,53.4583333 68.025,56.25 64.5666667,56.25 Z" id="Shape" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

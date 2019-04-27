@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./app/static/build",
+        "sourceMap": true,
+        "strict": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "downlevelIteration": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

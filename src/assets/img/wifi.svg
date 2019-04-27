@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="97px" height="98px" viewBox="0 0 97 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>wifi</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.01" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="100%" y1="15.7122145%" x2="0%" y2="84.2877855%" id="linearGradient-2">
+            <stop stop-color="#2020B5" offset="0%"></stop>
+            <stop stop-color="#2677FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop-copy" transform="translate(-321.000000, -3247.000000)">
+            <g id="Group-17" transform="translate(250.000000, 3015.000000)">
+                <g id="Group-35" transform="translate(0.000000, 186.000000)">
+                    <g id="Group-32" transform="translate(70.000000, 45.000000)">
+                        <g id="wifi">
+                            <path d="M100,0.0416666667 C100,0 100,0 100,0.0416666667 L0,0 L0,100 L100,100 L100,0.0416666667 Z M0,0 L100,0 L100,100 L0,100 L0,0 Z M0,0 L100,0 L100,100 L0,100 L0,0 Z" id="Shape" fill="url(#radialGradient-1)"></path>
+                            <path d="M95.7916667,41.5 C79.7916667,25.5 57.5,19.6666667 36.8333333,23.9166667 L47.3333333,34.4166667 C61.7916667,33.7083333 76.4583333,38.7916667 87.4583333,49.8333333 L95.7916667,41.5 L95.7916667,41.5 Z M79.125,58.1666667 C73.75,52.7916667 67.2916667,49.2916667 60.4166667,47.5 L75.125,62.2083333 L79.125,58.1666667 L79.125,58.1666667 Z M8.33333333,16.7083333 L21.125,29.4166667 C15,32.4166667 9.25,36.4166667 4.16666667,41.5 L12.4583333,49.8333333 C17.625,44.6666667 23.5833333,40.8333333 29.9583333,38.2916667 L39.2916667,47.625 C32.5416667,49.375 26.125,52.875 20.8333333,58.1666667 L20.8333333,58.2083333 L29.125,66.5 C34.7916667,60.8333333 42.2083333,58 49.625,57.9166667 L79.0833333,87.3333333 L84.375,82.0833333 L13.7083333,11.4583333 L8.33333333,16.7083333 Z M37.5,74.8333333 L50,87.3333333 L62.5,74.8333333 C55.625,67.9166667 44.4166667,67.9166667 37.5,74.8333333 Z" id="Shape" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

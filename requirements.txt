@@ -1,0 +1,30 @@
+# Flask
+Flask
+Flask-CORS
+MarkupSafe
+Werkzeug
+Jinja2
+itsdangerous
+click
+python-dotenv
+
+# Database
+peewee
+
+# Deployment
+uwsgi
+
+# Webpack
+flask-webpack-fork
+
+gevent
+gevent-websocket
+
+# Latest JSON lib
+simplejson
+
+# Linting (development)
+pylint
+
+# HTTP
+requests

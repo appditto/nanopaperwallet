@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="97px" height="98px" viewBox="0 0 97 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>printer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.01" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="100%" y1="9.5%" x2="0%" y2="90.5%" id="linearGradient-2">
+            <stop stop-color="#2020B5" offset="0%"></stop>
+            <stop stop-color="#2677FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop-copy" transform="translate(-1021.000000, -3247.000000)">
+            <g id="Group-17" transform="translate(250.000000, 3015.000000)">
+                <g id="Group-35" transform="translate(0.000000, 186.000000)">
+                    <g id="Group-32-Copy" transform="translate(550.000000, 45.000000)">
+                        <g id="printer" transform="translate(220.000000, 0.000000)">
+                            <polygon id="Path" fill="url(#radialGradient-1)" points="0 0 100 0 100 100 0 100"></polygon>
+                            <path d="M79.1666667,33.3333333 L20.8333333,33.3333333 C13.9166667,33.3333333 8.33333333,38.9166667 8.33333333,45.8333333 L8.33333333,70.8333333 L25,70.8333333 L25,87.5 L75,87.5 L75,70.8333333 L91.6666667,70.8333333 L91.6666667,45.8333333 C91.6666667,38.9166667 86.0833333,33.3333333 79.1666667,33.3333333 Z M66.6666667,79.1666667 L33.3333333,79.1666667 L33.3333333,58.3333333 L66.6666667,58.3333333 L66.6666667,79.1666667 Z M79.1666667,50 C76.875,50 75,48.125 75,45.8333333 C75,43.5416667 76.875,41.6666667 79.1666667,41.6666667 C81.4583333,41.6666667 83.3333333,43.5416667 83.3333333,45.8333333 C83.3333333,48.125 81.4583333,50 79.1666667,50 Z M75,12.5 L25,12.5 L25,29.1666667 L75,29.1666667 L75,12.5 Z" id="Shape" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

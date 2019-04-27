@@ -1,0 +1,20 @@
+/*! Colors START */
+$white: #FFFFFF;
+$dark-grey: #36363C;
+$black: #000000;
+$blue: #2677FF;
+$whiteish: #E9ECF2;
+/*! Colors END */
+
+/*! Color Variables START */
+$theme-colors: (
+  "primary": $blue,
+  "secondary": $white,
+  "info": $white,
+  "dark": $dark-grey,
+  "success": $white,
+  "light": $white,
+  "danger": $white
+); /*! Color Variables END */
+
+/*! Fonts START */

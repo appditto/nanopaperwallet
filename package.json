@@ -1,0 +1,83 @@
+{
+  "name": "geoffrey",
+  "version": "1.0.0",
+  "description": "BANANO f@h faucet",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --progress --colors -p",
+    "start": "concurrently -n \"WEBPACK,FLASK\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run webpack-dev-server\" \"npm run flask-server\"",
+    "webpack-dev-server": "NODE_ENV=debug webpack-dev-server --port 2992 --hot --inline",
+    "flask-server": "export $(cat .env | xargs) && ./venv/bin/python autoapp.py",
+    "lint": "eslint \"src/js/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avengemedia/flask_vue_boilerplate.git"
+  },
+  "author": "BANANO",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4"
+  },
+  "bugs": {
+    "url": "https://github.com/bbedward/geoffrey/issues"
+  },
+  "homepage": "https://github.com/bbedward/geoffrey#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
+    "@fortawesome/free-brands-svg-icons": "^5.2.0",
+    "@fortawesome/free-regular-svg-icons": "^5.2.0",
+    "@fortawesome/free-solid-svg-icons": "^5.2.0",
+    "affix": "^1.0.15",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.3.1",
+    "bufferutil": "^3.0.5",
+    "fs": "0.0.1-security",
+    "ignore-loader": "^0.1.2",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "popper.js": "^1.14.3",
+    "precss": "^3.1.2",
+    "sass-loader": "^7.0.3",
+    "socket.io": "^2.2.0",
+    "sync-exec": "^0.6.2",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "utf-8-validate": "^4.0.2",
+    "vue": "^2.6.8",
+    "vue-lazyload": "^1.2.6",
+    "vue-loader": "^15.7.0",
+    "vue-router": "^3.0.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.8",
+    "vuex": "^3.1.0",
+    "webpack-cli": "^3.2.3",
+    "ws": "^5.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.0.0",
+    "concurrently": "^3.5.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.3.0",
+    "file-loader": "^3.0.1",
+    "less": "^3.0.4",
+    "less-loader": "^4.0.4",
+    "postcss-loader": "^2.1.6",
+    "postcss-purgecss": "^1.0.0",
+    "raw-loader": "^1.0.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-manifest-plugin": "^2.0.4"
+  }
+}
