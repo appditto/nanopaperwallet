@@ -1,4 +1,4 @@
-# A website for creating paper wallets for NANO with ease
+# A website for creating paper wallets for NANO
 
 # Development
 

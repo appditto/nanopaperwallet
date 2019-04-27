@@ -12,7 +12,7 @@
             <h3 class="text-light w700 text-center text-lg-left mt-5 mt-lg-0">You like what we're doing?</h3>
             <h5 class="text-light text-center text-lg-left">Buy us a cup of coffee with NANO :)</h5>
             <div class="row d-flex justify-content-center justify-content-lg-start">
-              <div class="btn btn-lg btn-light btn-light-shadow text-primary w700 px-5 my-3 mx-3">Donate</div>
+              <button class="btn btn-lg btn-light btn-light-shadow text-primary w700 px-5 my-3 mx-3">Donate</button>
             </div>
           </div>
         </div>

@@ -8,9 +8,9 @@
             <span class="text-primary">paper wallets</span>
             <br>for NANO with ease
           </h1>
-          <div
+          <button @click="this.$router.push('Home')"
             class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 my-3 mx-auto mx-lg-2"
-          >Let's Start</div>
+          >Let's Start</button>
         </div>
         <div class="col-12 col-lg-8 pl-4 pl-md-5 pr-0">
           <img class="w-100" src="../assets/img/bg-hero.svg">
@@ -23,7 +23,7 @@
               <br>for NANO with ease
             </h1>
             <div class="row d-flex justify-content-center">
-              <div class="btn btn-lg btn-my text-light w600 px-5 mt-2">Let's Start</div>
+              <button class="btn btn-lg btn-my text-light w600 px-5 mt-2">Let's Start</button>
             </div>
           </div>
         </div>

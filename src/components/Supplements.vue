@@ -15,7 +15,7 @@
               <div class="card-body px-4 py-4">
                 <p>You can use these stickers to seal your paper wallets. So that people can see if they are tampered.</p>
                 <img class="w-100 px-4" src="../assets/img/stickers.png">
-                <div class="btn btn-lg btn-my btn-my-shadow text-light w600 d-block mt-4">I Want One</div>
+                <button class="btn btn-lg btn-my btn-my-shadow text-light w600 w-100 mt-4">I Want One</button>
               </div>
             </div>
             <div class="col-12 col-md-6 mt-5 px-4">
@@ -25,7 +25,7 @@
               <div class="card-body px-4 py-4">
                 <p>These usb sticks have a pre-installed, fresh copy of Linux. You can use them for maximum security, without the hassle of creating one yourself.</p>
                 <img class="w-100 my-4 px-3" src="../assets/img/usb.svg">
-                <div class="btn btn-lg btn-my btn-my-shadow text-light w600 d-block mt-4">I Want One</div>
+                <button class="btn btn-lg btn-my btn-my-shadow text-light w600 w-100 mt-4">I Want One</button>
               </div>
             </div>
           </div>

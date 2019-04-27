@@ -4,9 +4,9 @@
           <a href="./">
             <img src="../assets/img/logo.svg">
           </a>
-          <div v-if = showButton
+          <button v-if = showButton
             class="btn btn-lg btn-my btn-my-shadow text-light w600 px-4 px-lg-5"
-          >Download</div>
+          >Download</button>
         </div>
       </div>
 </template>

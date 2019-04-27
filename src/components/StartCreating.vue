@@ -8,9 +8,9 @@
               <br><span class="text-primary">paper wallets</span>?
             </h1>
             <h5 class="mx-2">If you read our suggestions, that means you’re ready to go. Let’s start creating your paper wallets.</h5>
-            <div
+            <button
               class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 my-3 mx-auto mx-lg-2"
-            >Let's Start</div>
+            >Let's Start</button>
         </div>
         <div class="col-12 col-lg-7 pl-4 pl-md-5 pr-0">
           <img class="w-100" src="../assets/img/bg-startcreating.svg">
@@ -23,7 +23,7 @@
             </h1>
             <h5 class="mx-2 text-center">If you read our suggestions, that means you’re ready to go. Let’s start creating your paper wallets.</h5>
             <div class="row d-flex justify-content-center">
-              <div class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 mt-2">Let's Start</div>
+              <button class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 mt-2">Let's Start</button>
             </div>
           </div>
         </div>
