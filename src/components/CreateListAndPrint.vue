@@ -16,7 +16,7 @@
             >Print Everything Below</button>
           </div>
         </div>
-        <div class="col-11 paper mt-4 px-5 py-4 mb-5">
+        <div class="col-11 paper mt-4 px-4 py-2 px-lg-5 py-lg-4 mb-5">
           <img class="w-100 my-4" src="../assets/img/paperwallet2.svg">
           <img class="w-100 my-4" src="../assets/img/paperwallet1.svg">
           <img class="w-100 my-4" src="../assets/img/paperwallet2.svg">
