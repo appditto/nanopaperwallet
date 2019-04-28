@@ -4,7 +4,7 @@
           <a href="./">
             <img class="logo" src="../assets/img/logo.svg">
           </a>
-          <button v-if = showButton
+          <button v-if = "showButton"
             class="btn btn-lg btn-my btn-my-shadow text-light w600 px-3 px-lg-5"
           >Download</button>
         </div>

@@ -4,7 +4,6 @@
 
 @import "./includes/theme";
 @import "./includes/bootstrap";
-// Import mixins after bootstrap because bootstrap has some that conflict
 @import "./includes/mixins";
 @import "./includes/fonts";
 

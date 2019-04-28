@@ -8,9 +8,9 @@
               <br><span class="text-primary">paper wallets</span>?
             </h1>
             <h5 class="mx-2">If you read our suggestions, that means you’re ready to go. Let’s start creating your paper wallets.</h5>
-            <button @click="openCreatePage()"
+            <router-link to="/create" tag="button"
               class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 my-3 mx-auto mx-lg-2"
-            >Let's Start</button>
+            >Let's Start</router-link>
         </div>
         <div class="col-12 col-lg-7 pl-4 pl-md-5 pr-0">
           <img class="w-100" src="../assets/img/bg-startcreating.svg">
@@ -23,7 +23,7 @@
             </h1>
             <h5 class="mx-2 text-center">If you read our suggestions, that means you’re ready to go. Let’s start creating your paper wallets.</h5>
             <div class="row d-flex justify-content-center">
-              <button @click="openCreatePage()" class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 mt-2">Let's Start</button>
+              <router-link to="create" tag="button" class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 mt-2">Let's Start</router-link>
             </div>
           </div>
         </div>
@@ -36,11 +36,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "StartCreating",
-  methods:{
-    openCreatePage: function (){
-      window.open("/create", "_blank");
-    }
-  }
+  name: "StartCreating"
 });
 </script>
