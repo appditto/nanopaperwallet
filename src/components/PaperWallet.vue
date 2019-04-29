@@ -59,7 +59,7 @@ export default Vue.extend({
 <style>
 .wallet-container {
     width: 9.25in;
-    height: 4in;
+    height: 2.8in;
     position: relative;
 }
 
