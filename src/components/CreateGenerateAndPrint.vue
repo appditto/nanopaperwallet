@@ -96,6 +96,15 @@ export default Vue.extend({
       printer.print(this.$refs.printableContent,
       [
       `
+
+.addressText {
+    position: absolute;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 6.3px;
+    right: 0.12in;
+    bottom: 0.7in;
+    text-align: center;
+}
 .wallet-container {
     width: 9.25in;
     height: 2.6in;
