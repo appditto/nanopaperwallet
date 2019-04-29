@@ -195,3 +195,21 @@ body{
             width: 10rem;
       }    
 }
+
+.icon-phone{
+      height: 10rem;
+}
+@include respond-above(sm){
+      .icon-phone{
+            height: 13rem;
+      }    
+}
+@include respond-above(md){
+      .icon-phone{
+            height: 16rem;
+      }    
+}
+
+.mh-100{
+      min-height: 100vh;
+}
