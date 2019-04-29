@@ -19,6 +19,9 @@
         <img v-else-if="design == 'B'" src="../assets/img/paperwalletemptyB.svg" />
         <img v-else-if="design == 'C'" src="../assets/img/paperwalletemptyC.svg" />
         <img v-else src="../assets/img/paperwalletemptyD.svg" />
+
+        <!-- Address -->
+        <div class="addressText" v-html="twoLineAddress()" />
     </div>
 </template>
 
@@ -39,6 +42,13 @@ export default Vue.extend({
       address: String,
       design: String
     },
+    methods: {
+      twoLineAddress() {
+          return `
+            <span class="addressTextColored${this.design}">${this.address.substring(0, 14)}</span>${this.address.substring(14, 33)}<br/>${this.address.substring(33, 58)}<span class="addressTextColored${this.design}">${this.address.substring(58)}</span>
+          `
+      }  
+    },
     mounted: function () {
         this.qrSeed = new QRCode({
             content: this.seed,
@@ -57,9 +67,34 @@ export default Vue.extend({
 </script>
 
 <style>
+.addressText {
+    position: absolute;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 6.3px;
+    right: 0.12in;
+    bottom: 0.7in;
+    text-align: center;
+}
+
+.addressTextColoredA {
+    color: blue;
+}
+
+.addressTextColoredB {
+    color: red;
+}
+
+.addressTextColoredC {
+    color: orange;
+}
+
+.addressTextColoredD {
+    color: green;
+}
+
 .wallet-container {
     width: 9.25in;
-    height: 4in;
+    height: 2.8in;
     position: relative;
 }
 
