@@ -18,3 +18,51 @@ $theme-colors: (
 ); /*! Color Variables END */
 
 /*! Fonts START */
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../assets/fonts/NunitoSans-w300.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../assets/fonts/NunitoSans-w400.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../assets/fonts/NunitoSans-w600.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../assets/fonts/NunitoSans-w700.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../assets/fonts/NunitoSans-w800.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../assets/fonts/NunitoSans-w300.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Overpass Mono";
+  src: url("../assets/fonts/OverpassMono-w600.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Overpass Mono";
+  src: url("../assets/fonts/OverpassMono-w700.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}
