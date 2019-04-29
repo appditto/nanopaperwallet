@@ -50,9 +50,9 @@
               >Print Everything Below</button>
             </div>
           </div>
-          <div class="col-11 paper mt-4 px-4 py-2 px-lg-5 py-lg-4 mb-5" id="printableContent">
+          <div class="col-12 paper mt-4 px-4 py-2 px-lg-5 py-lg-4 mb-5" id="printableContent" ref="printableContent">
             <div v-for="wallet in wallets" :key="wallet.address">
-              <PaperWalletA v-if="wallet.design == 'A'" :address="wallet.address" :seed="wallet.seed" />
+              <PaperWallet :design="wallet.design" :address="wallet.address" :seed="wallet.seed" />
             </div>
           </div>
         </div>
@@ -63,8 +63,11 @@
 
 <script>
 import Vue from "vue"
-import PaperWalletA from "./PaperWalletA.vue"
+import PaperWallet from "./PaperWallet.vue"
 import WalletGen from "../util/wallet_gen.ts"
+import { Printd } from 'printd'
+
+var printer = new Printd()
 
 export default Vue.extend({
   name: "CreateGenerateBanner",
@@ -90,11 +93,51 @@ export default Vue.extend({
       }
     },
     printWallets() {
-      this.$htmlToPaper('printableContent');
-    }
+      printer.print(this.$refs.printableContent,
+      [
+      `
+.wallet-container {
+    width: 9.25in;
+    height: 4in;
+    position: relative;
+}
+
+.wallet-qr {
+    position: absolute;
+    width: 1.135in;
+    height: 1.135in;
+    background-color: red;
+    top: 0.68in;
+    left: 0.28in;
+}
+
+.address-qr {
+    position: absolute;
+    width: 1.135in;
+    height: 1.135in;
+    background-color: red;
+    top: 0.68in;
+    right: 0.24in;
+}
+.address-logo {
+    width: 0.3986in;
+    height: 0.3986in;
+    position: absolute;
+    top: 1.08in;
+    left: 0.65in
+}
+.address-logo-right {
+    width: 0.3986in;
+    height: 0.3986in;
+    position: absolute;
+    top: 1.08in;
+    right: 0.58in
+}        
+        `])
+  }
   },
   components: {
-    PaperWalletA
+    PaperWallet
   }
 });
 </script>

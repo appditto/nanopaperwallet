@@ -19,6 +19,9 @@ module.exports = {
     entry: {
         app_js: path.join(__dirname, 'src', 'app')
     },
+    node: {
+        fs: 'empty'
+    },
     output: {
         path: path.join(__dirname, 'app', 'static', 'build'),
         publicPath: `${publicHost}/static/build/`,
