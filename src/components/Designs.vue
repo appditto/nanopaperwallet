@@ -16,10 +16,10 @@
               <img class="w-100" src="../assets/img/paperwalletB.svg">
             </div>
             <div class="col-12 col-md-6 mt-5 px-4">
-              <img class="w-100" src="../assets/img/paperwalletA.svg">
+              <img class="w-100" src="../assets/img/paperwalletC.svg">
             </div>
             <div class="col-12 col-md-6 mt-5 px-4">
-              <img class="w-100" src="../assets/img/paperwalletA.svg">
+              <img class="w-100" src="../assets/img/paperwalletD.svg">
             </div>
           </div>
         </div>
