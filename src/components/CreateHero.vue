@@ -20,7 +20,7 @@
                     <span class="h3 text-primary w700">A)</span>
                   </div>
                   <div class="col">
-                    <img class="w-100" src="../assets/img/paperwallet1.svg">
+                    <img class="w-100" src="../assets/img/paperwalletA.svg">
                   </div>
                 </div>
               </div>
@@ -30,7 +30,7 @@
                     <span class="h3 text-primary w700">B)</span>
                   </div>
                   <div class="col">
-                    <img class="w-100" src="../assets/img/paperwallet2.svg">
+                    <img class="w-100" src="../assets/img/paperwalletA.svg">
                   </div>
                 </div>
               </div>
@@ -40,7 +40,7 @@
                     <span class="h3 text-primary w700">C)</span>
                   </div>
                   <div class="col">
-                    <img class="w-100" src="../assets/img/paperwallet1.svg">
+                    <img class="w-100" src="../assets/img/paperwalletA.svg">
                   </div>
                 </div>
               </div>
@@ -50,7 +50,7 @@
                     <span class="h3 text-primary w700">D)</span>
                   </div>
                   <div class="col">
-                    <img class="w-100" src="../assets/img/paperwallet2.svg">
+                    <img class="w-100" src="../assets/img/paperwalletA.svg">
                   </div>
                 </div>
               </div>

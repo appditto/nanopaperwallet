@@ -9,7 +9,12 @@
         "experimentalDecorators": true,
         "esModuleInterop": true,
         "allowJs": true,
-        "downlevelIteration": true
+        "downlevelIteration": true,
+        "lib": [
+            "es2017",
+            "dom",
+            "scripthost"
+        ],
     },
     "include": [
         "./src/**/*"

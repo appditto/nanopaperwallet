@@ -54,9 +54,6 @@
             <div v-for="wallet in wallets" :key="wallet.address">
               <PaperWalletA v-if="wallet.design == 'A'" :address="wallet.address" :seed="wallet.seed" />
             </div>
-            <img class="w-100 my-4" src="../assets/img/paperwallet2.svg">
-            <img class="w-100 my-4" src="../assets/img/paperwallet1.svg">
-            <img class="w-100 my-4" src="../assets/img/paperwallet2.svg">
           </div>
         </div>
       </div>
