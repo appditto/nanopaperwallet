@@ -30,7 +30,7 @@
                     <span class="h3 text-primary w700">B)</span>
                   </div>
                   <div class="col">
-                    <img class="w-100" src="../assets/img/paperwalletA.svg">
+                    <img class="w-100" src="../assets/img/paperwalletB.svg">
                   </div>
                 </div>
               </div>
