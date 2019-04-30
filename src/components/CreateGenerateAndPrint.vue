@@ -1,5 +1,6 @@
 <template>
   <div>
+    <notifications width='60%' position="top center" group="foo"/>
     <div class="section mt-4">
       <div class="container-flex bg-footer py-5">
         <div class="container-my mx-auto">
@@ -40,7 +41,12 @@
             <h2 class="w700 text-center text-primary">List of Generated Wallets</h2>
           </div>
           <div class="col-12">
-            <textarea v-model="generatedWalletList" class="w-100 text-dark h6 text-area p-3 font-secondary w600" id="generatedwallets" readonly></textarea>
+            <textarea
+              v-model="generatedWalletList"
+              class="w-100 text-dark h6 text-area p-3 font-secondary w600"
+              id="generatedwallets"
+              readonly
+            ></textarea>
           </div>
           <div class="col-12">
             <div class="row d-flex justify-content-center">
@@ -50,9 +56,13 @@
               >Print Everything Below</button>
             </div>
           </div>
-          <div class="col-12 paper mt-4 px-4 py-2 px-lg-5 py-lg-4 mb-5" id="printableContent" ref="printableContent">
+          <div
+            class="col-12 paper mt-4 px-4 py-2 px-lg-5 py-lg-4 mb-5"
+            id="printableContent"
+            ref="printableContent"
+          >
             <div v-for="wallet in wallets" :key="wallet.address">
-              <PaperWallet :design="wallet.design" :address="wallet.address" :seed="wallet.seed" />
+              <PaperWallet :design="wallet.design" :address="wallet.address" :seed="wallet.seed"/>
             </div>
           </div>
         </div>
@@ -62,47 +72,49 @@
 </template>
 
 <script>
-import Vue from "vue"
-import PaperWallet from "./PaperWallet.vue"
-import WalletGen from "../util/wallet_gen.ts"
-import { Printd } from 'printd'
+import Vue from "vue";
+import PaperWallet from "./PaperWallet.vue";
+import WalletGen from "../util/wallet_gen.ts";
+import { Printd } from "printd";
+import Notifications from 'vue-notification'
 
-var printer = new Printd()
-
+var printer = new Printd();
+Vue.use(Notifications);
 export default Vue.extend({
   name: "CreateGenerateBanner",
   data() {
     return {
       numPaperWallets: 1,
-      design: 'A',
+      design: "A",
       wallets: [],
-      generatedWalletList: ''
-    }
+      generatedWalletList: ""
+    };
   },
   methods: {
     generateWallets() {
       for (let i = 0; i < this.numPaperWallets; i++) {
         WalletGen.genWallet().then(wallet => {
-          this.wallets.push(
-            {
-              address: wallet.address,
-              seed: wallet.seed.toUpperCase(),
-              design: this.design
-            }
-          )
+          this.wallets.push({
+            address: wallet.address,
+            seed: wallet.seed.toUpperCase(),
+            design: this.design
+          });
           if (this.generatedWalletList.length > 0) {
-            this.generatedWalletList += '\n'
+            this.generatedWalletList += "\n";
           }
-          this.generatedWalletList += wallet.address
-        })
+          this.generatedWalletList += wallet.address;
+        });
       }
+      this.$notify({
+        group: "foo",
+        title: this.numPaperWallets + " paper wallets have been generated!",
+      });
     },
     printWallets() {
-      let nativeElement = document.getElementById('nanopaperwallet-data')
-      let overpassMonoPath = nativeElement.getAttribute('data-overpass-mono')
-      printer.print(this.$refs.printableContent,
-      [
-      `
+      let nativeElement = document.getElementById("nanopaperwallet-data");
+      let overpassMonoPath = nativeElement.getAttribute("data-overpass-mono");
+      printer.print(this.$refs.printableContent, [
+        `
 @font-face {
   font-family: "Overpass Mono";
   src: url("${overpassMonoPath}") format("truetype"); /* Safari, Android, iOS */
@@ -202,8 +214,9 @@ export default Vue.extend({
     top: 1.05in;
     right: 0.58in
 }        
-        `])
-  }
+        `
+      ]);
+    }
   },
   components: {
     PaperWallet
