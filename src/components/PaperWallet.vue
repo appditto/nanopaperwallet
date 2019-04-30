@@ -22,6 +22,7 @@
 
         <!-- Address -->
         <div class="addressText" v-html="twoLineAddress()" />
+        <div class="seedText" v-html="seedTextStyled()" />
     </div>
 </template>
 
@@ -47,7 +48,27 @@ export default Vue.extend({
           return `
             <span class="addressTextColored${this.design}">${this.address.substring(0, 14)}</span>${this.address.substring(14, 33)}<br/>${this.address.substring(33, 58)}<span class="addressTextColored${this.design}">${this.address.substring(58)}</span>
           `
-      }  
+      },
+      seedTextStyled() {
+          let retLineOne = ''
+          let retLineTwo = ''
+          for (let i = 0; i < this.seed.length; i++) {
+            if (!isNaN(parseInt(this.seed[i], 10))) {
+                if (i > 31) {
+                    retLineTwo = retLineTwo + this.seed[i]
+                } else {
+                    retLineOne = retLineOne + this.seed[i]
+                }
+            } else {
+                if (i > 31) {
+                    retLineTwo = retLineTwo + `<span class="addressTextColored${this.design}">${this.seed[i]}</span>`
+                } else {
+                    retLineOne = retLineOne + `<span class="addressTextColored${this.design}">${this.seed[i]}</span>`
+                }
+            }
+          }
+          return `${retLineOne}<br />${retLineTwo}`
+      }
     },
     mounted: function () {
         this.qrSeed = new QRCode({
@@ -70,26 +91,38 @@ export default Vue.extend({
 .addressText {
     position: absolute;
     font-family: 'Overpass Mono', monospace;
-    font-size: 6.3px;
-    right: 0.12in;
+    font-size: 2pt;
+    right: 0.17in;
     bottom: 0.7in;
     text-align: center;
+    font-weight: 700;
+}
+
+.seedText {
+    position: absolute;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 2pt;
+    left: 0.95in;
+    bottom: 1.455in;
+    text-align: center;
+    transform: rotate(90deg);
+    font-weight: 700;
 }
 
 .addressTextColoredA {
-    color: blue;
+    color: #2677FF;
 }
 
 .addressTextColoredB {
-    color: red;
+    color: #FF6C08;
 }
 
 .addressTextColoredC {
-    color: orange;
+    color: #02B799;
 }
 
 .addressTextColoredD {
-    color: green;
+    color: #000000;
 }
 
 .wallet-container {
