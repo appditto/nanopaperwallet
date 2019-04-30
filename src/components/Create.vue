@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-x-hidden" id="create-section">
-      <Navbar :showButton=true></Navbar>
+      <Navbar :showDownloadButton="true"></Navbar>
       <CreateHero/>
       <CreateGenerateAndPrint/>
       <Footer/>

@@ -140,7 +140,7 @@ import Navbar from "./Navbar.vue";
 import Footer from "./Footer.vue";
 
 export default Vue.extend({
-  name: "Info",
+  name: "Redeem",
   data() {
     return {
       iphoneIsOpen: false,

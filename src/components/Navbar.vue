@@ -4,9 +4,12 @@
           <a href="./">
             <img class="logo grow" src="../assets/img/logo.svg">
           </a>
-          <button v-if = "showButton"
+          <button v-if = "showDownloadButton"
             class="btn btn-lg btn-my btn-my-shadow text-light w600 px-3 px-lg-5"
           >Download</button>
+          <router-link v-if="showRedeemButton" to="/redeem" tag="button"
+            class="btn btn-lg btn-my btn-my-shadow text-light w600 px-3 px-lg-5"
+          >Redeem</router-link>
         </div>
       </div>
 </template>
@@ -17,7 +20,8 @@ import Vue from "vue";
 export default Vue.extend({
   name: "Navbar",
   props: {
-      showButton: null,
+      showDownloadButton: null,
+      showRedeemButton: null,
     },
 });
 </script>

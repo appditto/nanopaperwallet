@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-x-hidden" id="home-section">
-      <Navbar/>
+      <Navbar :showRedeemButton="true"/>
       <BodySection/>
   </div>
 </template>
