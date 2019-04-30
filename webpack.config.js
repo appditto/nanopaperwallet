@@ -66,8 +66,13 @@ module.exports = {
             {
                 test: /\.vue$/,
                 use: [
-                    'vue-loader',
-                    'vue-svg-inline-loader'
+                    { loader: 'vue-loader' },
+                    {
+                        loader: 'vue-svg-inline-loader',
+                        options: {
+                            svgo: false
+                        }
+                    }
                 ]
             },
             {
