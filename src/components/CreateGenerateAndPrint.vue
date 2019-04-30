@@ -40,7 +40,7 @@
             <h2 class="w700 text-center text-primary">List of Generated Wallets</h2>
           </div>
           <div class="col-12">
-            <textarea class="w-100 text-primary h5 text-area" id="generatedwallets"></textarea>
+            <textarea v-model="generatedWalletList" class="w-100 text-primary h5 text-area" id="generatedwallets" readonly></textarea>
           </div>
           <div class="col-12">
             <div class="row d-flex justify-content-center">
@@ -75,7 +75,8 @@ export default Vue.extend({
     return {
       numPaperWallets: 1,
       design: 'A',
-      wallets: []
+      wallets: [],
+      generatedWalletList: ''
     }
   },
   methods: {
@@ -89,13 +90,26 @@ export default Vue.extend({
               design: this.design
             }
           )
+          if (this.generatedWalletList.length > 0) {
+            this.generatedWalletList += '\n'
+          }
+          this.generatedWalletList += wallet.address
         })
       }
     },
     printWallets() {
+      let nativeElement = document.getElementById('nanopaperwallet-data')
+      let overpassMonoPath = nativeElement.getAttribute('data-overpass-mono')
       printer.print(this.$refs.printableContent,
       [
       `
+@font-face {
+  font-family: "Overpass Mono";
+  src: url("${overpassMonoPath}") format("truetype"); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+
 @media print{@page {size: landscape}}
 
 @page  
@@ -119,11 +133,38 @@ export default Vue.extend({
 .addressText {
     position: absolute;
     font-family: 'Overpass Mono', monospace;
-    font-size: 6.3px;
-    right: 0.12in;
-    bottom: 0.7in;
+    font-size: 2pt;
+    right: 0.17in;
+    bottom: 0.5in;
     text-align: center;
 }
+
+.seedText {
+    position: absolute;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 2pt;
+    left: 0.97in;
+    bottom: 1.25in;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.addressTextColoredA {
+    color: #2677FF;
+}
+
+.addressTextColoredB {
+    color: #FF6C08;
+}
+
+.addressTextColoredC {
+    color: #02B799;
+}
+
+.addressTextColoredD {
+    color: #000000;
+}
+
 .wallet-container {
     width: 9.25in;
     height: 2.6in;
