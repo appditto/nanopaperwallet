@@ -91,15 +91,9 @@ export default Vue.extend({
 .addressText {
     position: absolute;
     font-family: 'Overpass Mono', monospace;
-<<<<<<< HEAD
     font-size: 5.7px;
     right: 0.2in;
     bottom: 0.72in;
-=======
-    font-size: 6px;
-    right: 0.17in;
-    bottom: 0.7in;
->>>>>>> 7c6f244d89300a98a46c89769592502b42ff7405
     text-align: center;
     font-weight: 700;
 }
@@ -107,15 +101,9 @@ export default Vue.extend({
 .seedText {
     position: absolute;
     font-family: 'Overpass Mono', monospace;
-<<<<<<< HEAD
     font-size: 5.7px;
     left: 1in;
     bottom: 1.46in;
-=======
-    font-size: 6px;
-    left: 0.95in;
-    bottom: 1.455in;
->>>>>>> 7c6f244d89300a98a46c89769592502b42ff7405
     text-align: center;
     transform: rotate(90deg);
     font-weight: 700;

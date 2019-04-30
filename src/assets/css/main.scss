@@ -164,6 +164,8 @@ body{
       border-width: 3px;
       border-radius: 6px;
       border-color: map-get($theme-colors, primary);
+      line-height:1.5;
+      min-height: 200px;
 }
 
 .paper{
