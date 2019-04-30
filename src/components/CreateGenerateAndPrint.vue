@@ -192,14 +192,14 @@ export default Vue.extend({
     width: 0.3986in;
     height: 0.3986in;
     position: absolute;
-    top: 1.08in;
+    top: 1.05in;
     left: 0.65in
 }
 .address-logo-right {
     width: 0.3986in;
     height: 0.3986in;
     position: absolute;
-    top: 1.08in;
+    top: 1.05in;
     right: 0.58in
 }        
         `])
