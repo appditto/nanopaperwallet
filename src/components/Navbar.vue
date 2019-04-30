@@ -10,6 +10,9 @@
           <router-link v-if="showRedeemButton" to="/redeem" tag="button"
             class="btn btn-lg btn-my btn-my-shadow text-light w600 px-3 px-lg-5"
           >Redeem</router-link>
+          <router-link v-if="showGoBackButton" to="/" tag="button"
+            class="btn btn-lg btn-my btn-my-shadow text-light w600 px-3 px-lg-5"
+          >Go Back</router-link>
         </div>
       </div>
 </template>
@@ -22,6 +25,7 @@ export default Vue.extend({
   props: {
       showDownloadButton: null,
       showRedeemButton: null,
+      showGoBackButton: null,
     },
 });
 </script>

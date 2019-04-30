@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-x-hidden mh-100" id="create-section">
-    <Navbar></Navbar>
+    <Navbar :showGoBackButton="true"></Navbar>
     <div class="section">
       <div class="container-my mx-auto py-5">
         <div class="row d-flex justify-content-center align-middle">
