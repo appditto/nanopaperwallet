@@ -12,7 +12,7 @@
             <h3 class="text-light w700 text-center text-lg-left mt-5 mt-lg-0">You like what we're doing?</h3>
             <h5 class="text-light text-center text-lg-left">Buy us a cup of coffee with NANO :)</h5>
             <div class="row d-flex justify-content-center justify-content-lg-start">
-              <a class="btn btn-lg btn-light btn-light-shadow text-primary w700 px-5 my-3 mx-3" href="nano:nano_1yekta1okrzh4hy3pjdmdghpp3ru557xxwfjt3xa4os951ji97h9tqthawoq?amount=10000000000000000000000000000">Donate</a>
+              <a class="btn btn-lg btn-light btn-light-shadow text-primary w700 px-5 my-3 mx-3" href="nano:xrb_3k6yicqkp5i9hc97nt3gbytuyih8smp7wxgqjxdgmgdh8g3gt4fg7x9qwg3r?amount=10000000000000000000000000000">Donate</a>
             </div>
           </div>
         </div>

@@ -23,7 +23,7 @@
             </h1>
             <h5 class="mx-2 text-center">If you read our suggestions, that means you’re ready to go. Let’s start creating your paper wallets.</h5>
             <div class="row d-flex justify-content-center">
-              <router-link to="create" tag="button" class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 mt-2">Let's Start</router-link>
+              <router-link to="/create" tag="button" class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 mt-2">Let's Start</router-link>
             </div>
           </div>
         </div>
