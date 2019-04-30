@@ -50,7 +50,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(ttf|eot|svg|png|jpe?g|gif|ico|woff)(\?.*)?$/i,
+                test: /\.(ttf|eot|svg|png|jpe?g|gif|ico|woff|manifest)(\?.*)?$/i,
                 loader: 'file-loader',
                 options: {
                     context: path.join(__dirname, 'src'),
