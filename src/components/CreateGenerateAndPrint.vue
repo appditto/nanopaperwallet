@@ -40,7 +40,7 @@
             <h2 class="w700 text-center text-primary">List of Generated Wallets</h2>
           </div>
           <div class="col-12">
-            <textarea class="w-100 text-primary h5 text-area" id="generatedwallets"></textarea>
+            <textarea v-model="generatedWalletList" class="w-100 text-primary h5 text-area" id="generatedwallets" readonly></textarea>
           </div>
           <div class="col-12">
             <div class="row d-flex justify-content-center">
@@ -75,7 +75,8 @@ export default Vue.extend({
     return {
       numPaperWallets: 1,
       design: 'A',
-      wallets: []
+      wallets: [],
+      generatedWalletList: ''
     }
   },
   methods: {
@@ -89,6 +90,10 @@ export default Vue.extend({
               design: this.design
             }
           )
+          if (this.generatedWalletList.length > 0) {
+            this.generatedWalletList += '\n'
+          }
+          this.generatedWalletList += wallet.address
         })
       }
     },
