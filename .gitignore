@@ -115,3 +115,6 @@ venv/
 *.db
 .env
 .vscode
+
+**/.DS_Store
+

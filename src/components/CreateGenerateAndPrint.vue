@@ -96,6 +96,25 @@ export default Vue.extend({
       printer.print(this.$refs.printableContent,
       [
       `
+@media print{@page {size: landscape}}
+
+@page  
+{ 
+    size: auto;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    margin: 0.35in auto 0 auto;
+}
+
+@media print {
+    .footer,
+    #non-printable {
+        display: none !important;
+    }
+    #printable {
+        display: block;
+    }
+}
 
 .addressText {
     position: absolute;
