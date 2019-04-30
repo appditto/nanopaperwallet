@@ -92,7 +92,7 @@ export default Vue.extend({
     position: absolute;
     font-family: 'Overpass Mono', monospace;
     font-size: 5.7px;
-    right: 0.2in;
+    right: 0.205in;
     bottom: 0.72in;
     text-align: center;
     font-weight: 700;
