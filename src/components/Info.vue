@@ -50,15 +50,27 @@
                   <div class="col-12 mt-5 px-4">
                     <h3 class="w700 text-center text-primary">STEP 2</h3>
                     <h5 class="w400 text-center text-dark col-12 col-md-10 col-lg-9 mx-auto mt-3">
-                      Open up Natrium and create a wallet.
+                      Open up Natrium and create a wallet.<br>
                       Be sure to backup your seed!
                     </h5>
+                    <div class="row d-flex justify-content-center"><div class="col-6 col-md-4 col-lg-3 mt-4"><img class="w-100" src="../assets/img/natrium-1.png"></div></div>
                   </div>
                   <div class="col-12 mt-5 px-4">
                     <h3 class="w700 text-center text-primary">STEP 3</h3>
                     <h5
                       class="w400 text-center text-dark col-12 col-md-10 col-lg-9 mx-auto mt-3"
                     >On the main screen, tap the settings icon on the top left. Scroll down, then tap "Load from Paper Wallet". Follow the instructions in the menu and scan the QR code on your paper wallet.</h5>
+                    <div class="row d-flex justify-content-center">
+                      <div class="col-7 col-md-4 col-lg-3 mt-4">
+                        <img class="w-100" src="../assets/img/natrium-2.png">
+                      </div>
+                      <div class="col-7 col-md-4 col-lg-3 mt-4">
+                        <img class="w-100" src="../assets/img/natrium-3.png">
+                      </div>
+                      <div class="col-7 col-md-4 col-lg-3 mt-4">
+                        <img class="w-100" src="../assets/img/natrium-4.png">
+                      </div>
+                    </div>
                   </div>
                   <div class="col-12 mt-5 px-4">
                     <h3 class="w700 text-center text-primary">DONE!</h3>
