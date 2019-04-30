@@ -40,7 +40,7 @@
             <h2 class="w700 text-center text-primary">List of Generated Wallets</h2>
           </div>
           <div class="col-12">
-            <textarea v-model="generatedWalletList" class="w-100 text-primary h5 text-area" id="generatedwallets" readonly></textarea>
+            <textarea v-model="generatedWalletList" class="w-100 text-dark h6 text-area p-3 font-secondary w600" id="generatedwallets" readonly></textarea>
           </div>
           <div class="col-12">
             <div class="row d-flex justify-content-center">
