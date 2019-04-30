@@ -26,6 +26,13 @@ body{
       border: none;
 }
 
+.btn-my-outline, .btn-my-outline:visited, .btn-my-outline:active{
+      background-color: rgb(255,255,255);
+      border-color: map-get($theme-colors, $primary);
+      border-width: 1px;
+      border: solid;
+}
+
 .divider{
       height: 4px;
       width: 95%;
@@ -208,8 +215,4 @@ body{
       .icon-phone{
             height: 16rem;
       }    
-}
-
-.mh-100{
-      min-height: 100vh;
 }
