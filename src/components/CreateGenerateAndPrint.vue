@@ -207,7 +207,7 @@ export default Vue.extend({
     position: absolute;
     width: 1.135in;
     height: 1.135in;
-    background-color: red;
+    background-color: white;
     top: 0.68in;
     left: 0.28in;
 }
@@ -216,7 +216,7 @@ export default Vue.extend({
     position: absolute;
     width: 1.135in;
     height: 1.135in;
-    background-color: red;
+    background-color: white;
     top: 0.68in;
     right: 0.24in;
 }
