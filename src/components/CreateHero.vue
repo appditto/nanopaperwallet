@@ -12,7 +12,7 @@
               class="w700 text-left text-primary col-12 col-md-10 col-lg-9 mx-auto"
             >CAUTION: The paper wallets are not encrypted, so make sure to keep them safe and away from strangers.</h5>
             <div
-              class="row d-flex justify-content-center justify-content-lg-between align-content-middle"
+              class="row d-flex justify-content-center align-content-middle"
             >
               <div class="col-12 col-md-6 mt-5 px-4">
                 <div class="row d-flex justify-content-lg-between align-items-center">
@@ -51,6 +51,16 @@
                   </div>
                   <div class="col">
                     <img class="w-100" src="../assets/img/paperwalletD.svg">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mt-5 px-4">
+                <div class="row d-flex justify-content-lg-between align-items-center">
+                  <div class="col-1 mx-1">
+                    <span class="h3 w600">E)</span>
+                  </div>
+                  <div class="col">
+                    <img class="w-100" src="../assets/img/paperwalletInstructions.svg">
                   </div>
                 </div>
               </div>
