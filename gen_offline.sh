@@ -9,8 +9,7 @@ export $(cat .env | xargs)
 python autoapp.py &
 FOO_PID=$!
 sleep 10
-#wget http://localhost:5000 -O offline/walletgen.html
-wget nanopaperwallet.com -O offline/walletgen.html
+wget http://localhost:5000 -O offline/walletgen.html
 sed -i'' -e 's%/static/build/%./static/build/%g' offline/walletgen.html
 cp -Rp app/static offline/
 sed -i'' -e 's%/static/build/%./static/build/%g' offline/static/build/app_js*
