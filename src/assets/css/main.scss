@@ -278,3 +278,23 @@ h3{
             font-size: 1.8rem;
       }    
 }
+
+.btn-text-redeem{
+      font-size: calc(0.5rem + 2vw);
+}
+@include respond-above(sm){
+      .btn-text-redeem{
+            font-size: 1.2rem;
+      }    
+}
+
+.btn-download{
+      width: 45%;
+}
+@include respond-above(sm){
+      .btn-download{
+            width: auto;
+      }    
+}
+
+

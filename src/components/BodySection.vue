@@ -6,7 +6,6 @@
     <Tips/>
     <StartCreating/>
     <Donate/>
-
   </div>
 </template>
 
