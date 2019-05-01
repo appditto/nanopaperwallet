@@ -60,7 +60,7 @@
                     <span class="h3 w600">E)</span>
                   </div>
                   <div class="col">
-                    <img class="w-100" src="../assets/img/paperwalletInstructions.svg">
+                    <img class="w-100" src="../assets/img/paperwalletinstructions.svg">
                   </div>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="wallet-container">
+    <div class="wallet-container" v-if="design != 'E'">
         <!-- QR Code for SEED -->
         <div class="wallet-qr" v-html="qrSeed" />
         <img svg-inline v-if="design == 'A'" class="address-logo" src="../assets/img/QRlogoA.svg" />
@@ -23,6 +23,9 @@
         <!-- Address -->
         <div class="addressText" v-html="twoLineAddress()" />
         <div class="seedText" v-html="seedTextStyled()" />
+    </div>
+    <div class="wallet-container" v-else>
+        <img svg-inline src="../assets/img/paperwalletinstructions.svg" />
     </div>
 </template>
 
@@ -71,18 +74,20 @@ export default Vue.extend({
       }
     },
     mounted: function () {
-        this.qrSeed = new QRCode({
-            content: this.seed,
-            width: 108.95,
-            height: 108.95,
-            padding: 1
-        }).svg();
-        this.qrAddress = new QRCode({
-            content: this.address,
-            width: 108.95,
-            height: 108.95,
-            padding: 1
-        }).svg();        
+        if (this.design != 'E') {
+            this.qrSeed = new QRCode({
+                content: this.seed,
+                width: 108.95,
+                height: 108.95,
+                padding: 1
+            }).svg();
+            this.qrAddress = new QRCode({
+                content: this.address,
+                width: 108.95,
+                height: 108.95,
+                padding: 1
+            }).svg();        
+        }
     }
 });
 </script>

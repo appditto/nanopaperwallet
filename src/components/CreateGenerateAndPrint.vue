@@ -94,21 +94,40 @@ export default Vue.extend({
   methods: {
     generateWallets() {
       for (let i = 0; i < this.numPaperWallets; i++) {
-        WalletGen.genWallet().then(wallet => {
+        if (this.design != 'E') {
+          WalletGen.genWallet().then(wallet => {
+            this.wallets.push({
+              address: wallet.address,
+              seed: wallet.seed.toUpperCase(),
+              design: this.design
+            });
+            if (this.generatedWalletList.length > 0) {
+              this.generatedWalletList += "\n";
+            }
+            this.generatedWalletList += wallet.address;
+          });
+        } else {
+          // Special instructions design
           this.wallets.push({
-            address: wallet.address,
-            seed: wallet.seed.toUpperCase(),
+            address: null,
+            seed: null,
             design: this.design
           });
-          if (this.generatedWalletList.length > 0) {
-            this.generatedWalletList += "\n";
-          }
-          this.generatedWalletList += wallet.address;
-        });
+        }
+      }
+      let title = this.numPaperWallets
+      if (this.numPaperWallets > 1 && this.design != 'E') {
+        title += " paper wallets have been generated!"
+      } else if (this.design != 'E') {
+        title += " paper wallet has been generated!"
+      } else if (this.numPaperWallets > 1) {
+        title += " instruction cards have been generated!"
+      } else {
+        title += " instruction card has been generated!"
       }
       this.$notify({
         group: "foo",
-        title: this.numPaperWallets + " paper wallets have been generated!",
+        title: title,
       });
     },
     printWallets() {
