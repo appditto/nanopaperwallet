@@ -1,7 +1,7 @@
 <template>
   <div>
-    <notifications width='60%' position="top center" group="foo"/>
-    <div class="section mt-4">
+    <notifications width='60%' position="top center" group="foo" class="non-printable"/>
+    <div class="section mt-4 non-printable">
       <div class="container-flex bg-footer py-5">
         <div class="container-my mx-auto">
           <div class="row d-flex justify-content-center align-items-center">
@@ -38,6 +38,7 @@
     <div class="section">
       <div class="container-my mx-auto py-3">
         <div class="row d-flex justify-content-center align-middle">
+          <span class="non-printable">
           <div class="col-12">
             <h2 class="w700 text-center text-primary">List of Generated Wallets</h2>
           </div>
@@ -57,6 +58,7 @@
               >Print Everything Below</button>
             </div>
           </div>
+          </span>
           <div
             class="col-12 paper mt-4 px-4 py-2 px-lg-5 py-lg-4 mb-5"
             id="printableContent"
@@ -146,17 +148,11 @@ export default Vue.extend({
 
 @page  
 { 
-    size: auto;   /* auto is the initial value */ 
-
     /* this affects the margin in the printer settings */ 
     margin: 0.35in auto 0 auto;
 }
 
 @media print {
-    .footer,
-    #non-printable {
-        display: none !important;
-    }
     #printable {
         display: block;
     }

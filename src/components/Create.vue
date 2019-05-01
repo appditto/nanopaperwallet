@@ -1,9 +1,9 @@
 <template>
   <div class="overflow-x-hidden" id="create-section">
-      <Navbar :showDownloadButton="true"></Navbar>
-      <CreateHero/>
+      <Navbar :showDownloadButton="true" class="non-printable"></Navbar>
+      <CreateHero class="non-printable" />
       <CreateGenerateAndPrint/>
-      <Footer/>
+      <Footer class="non-printable"/>
   </div>
 </template>
 
