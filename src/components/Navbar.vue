@@ -5,9 +5,10 @@
           <router-link to="/">
             <img class="logo grow" src="../assets/img/logo.svg">
           </router-link>
-          <button v-if = "showDownloadButton"
+          <a v-if = "showDownloadButton"
             class="btn btn-lg btn-my btn-my-shadow text-light w600 px-3 px-lg-5"
-          >Download</button>
+            href="/offline/nanopaperwallet_01.zip"
+          >Download</a>
           <router-link v-if="showRedeemButton" to="/redeem" tag="button"
             class="btn btn-lg btn-my btn-my-shadow text-light w600 px-3 px-lg-5"
           >Redeem</router-link>
