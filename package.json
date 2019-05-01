@@ -44,6 +44,7 @@
     "printd": "^1.4.0",
     "qrcode-svg": "^1.0.0",
     "sass-loader": "^7.0.3",
+    "simple-modal-vue": "^1.0.12",
     "socket.io": "^2.2.0",
     "sync-exec": "^0.6.2",
     "ts-loader": "^5.3.3",

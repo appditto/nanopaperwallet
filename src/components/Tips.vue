@@ -25,7 +25,7 @@
               <h3 class="w700 text-center text-md-right text-primary mt-2">Use a Dumb Printer</h3>
               <p
                 class="text-center text-md-right"
-              >"Smart" printers are connected to the internet. This is not good because it makes it easier for hackers to access your printer. This issue does not exist with “dumb” printers.</p>
+              >"Smart" printers are connected to the internet which makes it easier for hackers to access your printer. Also, do not use a public printer such as in a school or print center as they save an image of what was printed.</p>
             </div>
             <div class="col-12 col-md-6 my-4 px-4 px-md-5">
               <div class="row d-flex justify-content-center justify-content-md-start px-3">

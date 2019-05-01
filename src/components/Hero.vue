@@ -3,7 +3,7 @@
     <div class="container-fluid mx-auto">
       <div class="row d-flex justify-content-center justify-content-lg-between align-middle px-0">
         <div class="col-12 col-lg-4 align-self-center d-none d-lg-block">
-          <h1 class="w700 text-center text-lg-left mx-2">
+          <h1 class="w700 text-center text-lg-left mx-2 hmy1">
             Create
             <span class="text-primary">paper wallets</span>
             <br>for NANO with ease

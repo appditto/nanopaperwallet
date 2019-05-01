@@ -13,13 +13,13 @@
           <div class="faq-card pt-4 pb-3 mt-3">
             <p
               class="w400 text-center text-light col-12 col-lg-10 mx-auto"
-            >It is a safe & convinient way of storing and gifting NANO. Especially if you are trying to introduce NANO to people that have never used a cryptocurrency before.</p>
+            >It is a simple & convenient way of storing and gifting NANO, especially if you are trying to introduce NANO to people that have never used a cryptocurrency before.</p>
           </div>
           <h2 class="w700 text-center text-primary mt-5">Is this safe?</h2>
           <div class="faq-card pt-4 pb-3 mt-3">
             <p
               class="w400 text-center text-light col-12 col-lg-10 mx-auto"
-            >Yes it is, as long as you download our html and run it locally without connecting to internet. The seeds are created on your device locally and never transmitted to our servers. If you want to use them to store your funds long term, we recommend installing a fresh copy of Linux, and using a “dumb” printer for maximum security. Also, check our html code for yourself 🙂</p>
+            >Yes it is, as long as you download and run it locally without connecting to internet. Even if you're online, the seeds are created on your device locally and never transmitted to our servers. If you want to use them to store your funds long term, we recommend installing a fresh copy of Linux, and using a “dumb” printer for maximum security. Also, it is open-source, so you can check the code for yourself 🙂</p>
           </div>
         </div>
       </div>

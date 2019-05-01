@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#2020B5" offset="0%"></stop>
+            <stop stop-color="#2677FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 Z M39.3333333,63 L26.5118446,50.1785113 C25.8609708,49.5276375 24.8056959,49.5276375 24.154822,50.1785113 L21.845178,52.4881554 C21.1943041,53.1390292 21.1943041,54.1943041 21.845178,54.845178 L38.154822,71.154822 C38.8056959,71.8056959 39.8609708,71.8056959 40.5118446,71.154822 L78.154822,33.5118446 C78.8056959,32.8609708 78.8056959,31.8056959 78.154822,31.154822 L75.845178,28.845178 C75.1943041,28.1943041 74.1390292,28.1943041 73.4881554,28.845178 L39.3333333,63 Z" id="tick" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>
