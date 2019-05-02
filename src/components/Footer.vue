@@ -3,8 +3,7 @@
     <div class="container-fluid">
       <div class="row d-flex justify-content-center align-middle">
         <p class="text-light text-center w300">
-          © 2019.
-          <span class="w700">Nano Paper Wallet</span>.
+          © 2019. Made for <a target="_blank" href="https://reddit.com/u/rockmsockmjesus"><span class="w700">u/Rockmsockmjesus</span></a> by <a target="_blank" href="https://appditto.com"><span class="w700">Appditto</span></a>.
         </p>
       </div>
     </div>
