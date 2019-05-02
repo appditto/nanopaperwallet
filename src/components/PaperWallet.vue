@@ -79,13 +79,15 @@ export default Vue.extend({
                 content: this.seed,
                 width: 108.95,
                 height: 108.95,
-                padding: 1
+                padding: 1,
+                ecl: "Q"
             }).svg();
             this.qrAddress = new QRCode({
                 content: this.address,
                 width: 108.95,
                 height: 108.95,
-                padding: 1
+                padding: 1,
+                ecl: "Q"
             }).svg();        
         }
     }
