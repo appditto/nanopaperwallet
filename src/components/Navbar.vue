@@ -11,7 +11,7 @@
           >Download the Generator</a>
           <router-link v-if="showRedeemButton" to="/redeem" tag="button"
             class="btn btn-my btn-my-shadow text-light w600 px-3 px-lg-4 py-2"
-          ><span class="btn-text-redeem">How to Redeem?</span></router-link>
+          ><span class="btn-text-redeem">How to Redeem</span></router-link>
           <router-link v-if="showGoBackButton" to="/" tag="button"
             class="btn btn-lg btn-my btn-my-shadow text-light w600 px-3 px-lg-5"
           >Go Back</router-link>
