@@ -1,20 +1,20 @@
 <template>
-    <div class="wallet-container" v-if="design != 'E'">
+    <div class="wallet-container" v-if="design != 'F'">
         <!-- QR Code for SEED -->
         <div class="wallet-qr" v-html="qrSeed" />
         <img svg-inline v-if="design == 'A'" class="address-logo" src="../assets/img/QRlogoA.svg" />
         <img svg-inline v-else-if="design == 'B'" class="address-logo" src="../assets/img/QRlogoB.svg" />
         <img svg-inline v-else-if="design == 'C'" class="address-logo" src="../assets/img/QRlogoC.svg" />
-        <img svg-inline v-else-if="design == 'D'" class="address-logo" src="../assets/img/QRlogoD.svg" />
-        <img svg-inline v-else class="address-logo" src="../assets/img/QRlogoE.svg" />
+        <img svg-inline v-else-if="design == 'D'" class="address-logo" src="../assets/img/QRlogoA.svg" />
+        <img svg-inline v-else class="address-logo" src="../assets/img/QRlogoA.svg" />
 
         <!-- QR Code for ADDRESS -->
         <div class="address-qr" v-html="qrAddress" />
         <img svg-inline v-if="design == 'A'" class="address-logo-right" src="../assets/img/QRlogoA.svg" />
         <img svg-inline v-else-if="design == 'B'" class="address-logo-right" src="../assets/img/QRlogoB.svg" />
         <img svg-inline v-else-if="design == 'C'" class="address-logo-right" src="../assets/img/QRlogoC.svg" />
-        <img svg-inline v-else-if="design == 'D'" class="address-logo-right" src="../assets/img/QRlogoD.svg" />
-        <img svg-inline v-else class="address-logo-right" src="../assets/img/QRlogoE.svg" />
+        <img svg-inline v-else-if="design == 'D'" class="address-logo-right" src="../assets/img/QRlogoA.svg" />
+        <img svg-inline v-else class="address-logo-right" src="../assets/img/QRlogoA.svg" />
 
         <!-- Paper Wallet Design -->
         <img svg-inline v-if="design == 'A'" src="../assets/img/paperwalletemptyA.svg" />
