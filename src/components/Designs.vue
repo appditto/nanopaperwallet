@@ -21,6 +21,9 @@
             <div class="col-12 col-md-6 mt-5 px-4">
               <img class="w-100" src="../assets/img/paperwalletD.svg">
             </div>
+            <div class="col-12 col-md-6 mt-5 px-4">
+              <img class="w-100" src="../assets/img/paperwalletE.svg">
+            </div>
           </div>
         </div>
       </div>
