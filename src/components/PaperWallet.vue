@@ -2,39 +2,41 @@
     <div class="wallet-container" v-if="design != 'F'">
         <!-- QR Code for SEED -->
         <div class="wallet-qr" v-html="qrSeed" />
-        <img svg-inline v-if="design == 'A'" class="address-logo" src="../assets/img/QRlogoA.svg" />
-        <img svg-inline v-else-if="design == 'B'" class="address-logo" src="../assets/img/QRlogoB.svg" />
-        <img svg-inline v-else-if="design == 'C'" class="address-logo" src="../assets/img/QRlogoC.svg" />
-        <img svg-inline v-else-if="design == 'D'" class="address-logo" src="../assets/img/QRlogoA.svg" />
-        <img svg-inline v-else class="address-logo" src="../assets/img/QRlogoA.svg" />
+        <simple-svg v-if="design == 'A'" class="address-logo" :filepath="'../assets/img/QRlogoA.svg'"/>
+        <simple-svg v-else-if="design == 'B'" class="address-logo" :filepath="'../assets/img/QRlogoB.svg'" />
+        <simple-svg v-else-if="design == 'C'" class="address-logo" :filepath="'../assets/img/QRlogoC.svg'" />
+        <simple-svg v-else-if="design == 'D'" class="address-logo" :filepath="'../assets/img/QRlogoA.svg'" />
+        <simple-svg v-else class="address-logo" :filepath="'../assets/img/QRlogoA.svg'"/>
 
         <!-- QR Code for ADDRESS -->
         <div class="address-qr" v-html="qrAddress" />
-        <img svg-inline v-if="design == 'A'" class="address-logo-right" src="../assets/img/QRlogoA.svg" />
-        <img svg-inline v-else-if="design == 'B'" class="address-logo-right" src="../assets/img/QRlogoB.svg" />
-        <img svg-inline v-else-if="design == 'C'" class="address-logo-right" src="../assets/img/QRlogoC.svg" />
-        <img svg-inline v-else-if="design == 'D'" class="address-logo-right" src="../assets/img/QRlogoA.svg" />
-        <img svg-inline v-else class="address-logo-right" src="../assets/img/QRlogoA.svg" />
+        <simple-svg v-if="design == 'A'" class="address-logo-right" :filepath="'../assets/img/QRlogoA.svg'" />
+        <simple-svg v-else-if="design == 'B'" class="address-logo-right" :filepath="'../assets/img/QRlogoB.svg'" />
+        <simple-svg v-else-if="design == 'C'" class="address-logo-right" :filepath="'../assets/img/QRlogoC.svg'" />
+        <simple-svg v-else-if="design == 'D'" class="address-logo-right" :filepath="'../assets/img/QRlogoA.svg'" />
+        <simple-svg v-else class="address-logo-right" :filepath="'../assets/img/QRlogoA.svg'" />
 
         <!-- Paper Wallet Design -->
-        <img svg-inline v-if="design == 'A'" src="../assets/img/paperwalletemptyA.svg" />
-        <img svg-inline v-else-if="design == 'B'" src="../assets/img/paperwalletemptyB.svg" />
-        <img svg-inline v-else-if="design == 'C'" src="../assets/img/paperwalletemptyC.svg" />
-        <img svg-inline v-else-if="design == 'D'" src="../assets/img/paperwalletemptyD.svg" />
-        <img svg-inline v-else src="../assets/img/paperwalletemptyE.svg" />
+        <simple-svg v-if="design == 'A'" :filepath="'../assets/img/paperwalletemptyA.svg'" />
+        <simple-svg v-else-if="design == 'B'" :filepath="'../assets/img/paperwalletemptyB.svg'" />
+        <simple-svg v-else-if="design == 'C'" :filepath="'../assets/img/paperwalletemptyC.svg'" />
+        <simple-svg v-else-if="design == 'D'" :filepath="'../assets/img/paperwalletemptyD.svg'" />
+        <simple-svg v-else :filepath="'../assets/img/paperwalletemptyE.svg'" />
 
         <!-- Address -->
         <div class="addressText" v-html="twoLineAddress()" />
         <div class="seedText" v-html="seedTextStyled()" />
     </div>
     <div class="wallet-container" v-else>
-        <img svg-inline src="../assets/img/paperwalletinstructions.svg" />
+        <simple-svg :filepath="'../assets/img/paperwalletinstructions.svg'" />
     </div>
 </template>
 
 <script>
 import Vue from "vue";
 import QRCode from "qrcode-svg";
+import VueSimpleSVG from 'vue-simple-svg';
+Vue.use(VueSimpleSVG);
 
 export default Vue.extend({
     name: "PaperWallet",
