@@ -42,7 +42,7 @@
                     <h3 class="w700 text-center text-primary" id="iphoneStepOne">STEP 1</h3>
                     <h5
                       class="w400 text-center text-dark col-12 col-md-10 col-lg-8 mx-auto mt-3"
-                    >Download Natrium Wallet from AppStore.</h5>
+                    >Download <span class="w700">Natrium Wallet</span> from AppStore.</h5>
                     <div class="row d-flex justify-content-center mt-3">
                       <a target="_blank" href="https://itunes.apple.com/us/app/natrium/id1451425707?ls=1&mt=8"><button class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5">Download</button></a>
                     </div>
@@ -51,7 +51,7 @@
                     <h3 class="w700 text-center text-primary">STEP 2</h3>
                     <h5 class="w400 text-center text-dark col-12 col-md-10 col-lg-8 mx-auto mt-3">
                       Open up Natrium and create a wallet.<br>
-                      Be sure to backup your seed!
+                      <span class="w700">Be sure to backup your seed!</span>
                     </h5>
                     <div class="row d-flex justify-content-center"><div class="col-7 col-md-4 col-lg-3 mt-4"><img class="w-100" src="../assets/img/natrium-1.png"></div></div>
                   </div>
@@ -59,7 +59,7 @@
                     <h3 class="w700 text-center text-primary">STEP 3</h3>
                     <h5
                       class="w400 text-center text-dark col-12 col-md-10 col-lg-8 mx-auto mt-3"
-                    >On the main screen, tap the settings icon on the top left. Scroll down, then tap "Load from Paper Wallet". Follow the instructions in the menu and scan the QR code on your paper wallet.</h5>
+                    >On the main screen, tap the settings icon on the top left. Scroll down, then tap "<span class="w700">Load from Paper Wallet</span>".<br>Follow the instructions in the menu and scan the "<span class="w700">PRIVATE SEED</span>" QR code on your paper wallet.</h5>
                     <div class="row d-flex justify-content-center">
                       <div class="col-7 col-md-4 col-lg-3 mt-4">
                         <img class="w-100" src="../assets/img/natrium-2.png">
@@ -89,7 +89,7 @@
                     <h3 class="w700 text-center text-primary">STEP 1</h3>
                     <h5
                       class="w400 text-center text-dark col-12 col-md-10 col-lg-8 mx-auto mt-3"
-                    >Download Natrium Wallet from Play Store.</h5>
+                    >Download <span class="w700">Natrium Wallet</span> from Play Store.</h5>
                     <div class="row d-flex justify-content-center mt-3">
                       <a target="_blank" href="https://play.google.com/store/apps/details?id=co.banano.natriumwallet"><button class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5">Download</button></a>
                     </div>
@@ -98,7 +98,7 @@
                     <h3 class="w700 text-center text-primary">STEP 2</h3>
                     <h5 class="w400 text-center text-dark col-12 col-md-10 col-lg-8 mx-auto mt-3">
                       Open up Natrium and create a wallet.
-                      Be sure to backup your seed!
+                      <br><span class="w700">Be sure to backup your seed!</span>
                     </h5>
                     <div class="row d-flex justify-content-center"><div class="col-7 col-md-4 col-lg-3 mt-4"><img class="w-100" src="../assets/img/natrium-1.png"></div></div>
                   </div>
@@ -106,7 +106,7 @@
                     <h3 class="w700 text-center text-primary">STEP 3</h3>
                     <h5
                       class="w400 text-center text-dark col-12 col-md-10 col-lg-8 mx-auto mt-3"
-                    >On the main screen, tap the settings icon on the top left. Scroll down, then tap "Load from Paper Wallet". Follow the instructions in the menu and scan the QR code on your paper wallet.</h5>
+                    >On the main screen, tap the settings icon on the top left. Scroll down, then tap "<span class="w700">Load from Paper Wallet</span>".<br>Follow the instructions in the menu and scan the "<span class="w700">PRIVATE SEED</span>" QR code on your paper wallet.</h5>
                     <div class="row d-flex justify-content-center">
                       <div class="col-7 col-md-4 col-lg-3 mt-4">
                         <img class="w-100" src="../assets/img/natrium-2.png">
