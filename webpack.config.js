@@ -70,7 +70,13 @@ module.exports = {
                     {
                         loader: 'vue-svg-inline-loader',
                         options: {
-                            svgo: false
+                            svgo: {
+                                plugins: [
+                                    {
+                                        prefixIds: true
+                                    }
+                                ]
+                            }
                         }
                     }
                 ]
