@@ -19,7 +19,7 @@
           <div class="faq-card pt-4 pb-3 mt-3">
             <p
               class="w400 text-center text-light col-12 col-lg-11 mx-auto break-word"
-            >Yes it is. The seeds are created on your device locally and never transmitted to our servers. We still recommend you to download the generator and run it without an internet connection for additional security. If you want to use them to store your funds long term, we recommend installing a fresh copy of Linux, and using a “dumb” printer for maximum security. Also, it is open-source. So, you can check the code for yourself on: <a target="_blank" href="https://github.com/appditto/nanopaperwallet"><span class="w700">github.com/appditto/nanopaperwallet</span></a>.</p>
+            >Yes it is. The seeds are created on your device locally and never transmitted to our servers. We still recommend you to download the generator and run it without an internet connection for additional security.</p>
           </div>
         </div>
       </div>

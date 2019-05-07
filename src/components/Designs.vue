@@ -10,19 +10,19 @@
           </h5>
           <div class="row d-flex justify-content-center align-middle">
             <div class="col-12 col-md-6 mt-5 px-4">
-              <img class="w-100" src="../assets/img/paperwalletA.svg">
+              <img class="w-100" src="../assets/img/paperwalletemptyA.svg">
             </div>
             <div class="col-12 col-md-6 mt-5 px-4">
-              <img class="w-100" src="../assets/img/paperwalletB.svg">
+              <img class="w-100" src="../assets/img/paperwalletemptyB.svg">
             </div>
             <div class="col-12 col-md-6 mt-5 px-4">
-              <img class="w-100" src="../assets/img/paperwalletC.svg">
+              <img class="w-100" src="../assets/img/paperwalletemptyC.svg">
             </div>
             <div class="col-12 col-md-6 mt-5 px-4">
-              <img class="w-100" src="../assets/img/paperwalletD.svg">
+              <img class="w-100" src="../assets/img/paperwalletemptyD.svg">
             </div>
             <div class="col-12 col-md-6 mt-5 px-4">
-              <img class="w-100" src="../assets/img/paperwalletE.svg">
+              <img class="w-100" src="../assets/img/paperwalletemptyE.svg">
             </div>
           </div>
         </div>
