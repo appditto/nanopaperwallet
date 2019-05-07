@@ -115,6 +115,10 @@ body{
       width: 3rem;
 }
 
+.icon-3{
+      width: 2.2rem;
+}
+
 .bg-donate{
       background: rgb(38,119,255);
       background: -moz-linear-gradient(45deg, rgba(38,119,255,1) 0%, rgba(32,32,181,1) 100%);
@@ -228,6 +232,16 @@ body{
       @include transition(all 0.15s ease-out);
 }
 
+.grow-2{
+      @include transform(scale(1));
+      @include transition(all 0.15s ease-out);
+}
+
+.grow-2:hover{
+      @include transform(scale(1.2));
+      @include transition(all 0.15s ease-out);
+}
+
 .vue-notification {
       padding: 10px;
       margin: 5px 5px;
@@ -300,6 +314,4 @@ h3{
 a:link, a:visited, a:hover, a:active {
       color: white;
 }
-
-
 
