@@ -24,6 +24,9 @@
             <div class="col-12 col-md-6 mt-5 px-4">
               <img class="w-100" src="../assets/img/paperwalletemptyE.svg">
             </div>
+            <div class="col-12 col-md-6 mt-5 px-4">
+              <img class="w-100" src="../assets/img/paperwalletemptyF.svg">
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="wallet-container" v-if="design != 'F'">
+    <div class="wallet-container" v-if="design != 'G'">
         <!-- QR Code for SEED -->
         <div class="wallet-qr" v-html="qrSeed" />
         <img svg-inline v-if="design == 'A'" class="address-logo" src="../assets/img/QRlogoA.svg" />
@@ -21,7 +21,8 @@
         <img svg-inline v-else-if="design == 'B'" src="../assets/img/paperwalletemptyB.svg" />
         <img svg-inline v-else-if="design == 'C'" src="../assets/img/paperwalletemptyC.svg" />
         <img svg-inline v-else-if="design == 'D'" src="../assets/img/paperwalletemptyD.svg" />
-        <img svg-inline v-else src="../assets/img/paperwalletemptyE.svg" />
+        <img svg-inline v-else-if="design == 'E'" src="../assets/img/paperwalletemptyE.svg" />
+        <img svg-inline v-else src="../assets/img/paperwalletemptyF.svg" />
 
         <!-- Address -->
         <div class="addressText" v-html="twoLineAddress()" />
@@ -77,7 +78,7 @@ export default Vue.extend({
       }
     },
     mounted: function () {
-        if (this.design != 'F') {
+        if (this.design != 'G') {
             this.qrSeed = new QRCode({
                 content: this.seed,
                 width: 108.95,
@@ -136,6 +137,9 @@ export default Vue.extend({
 }
 
 .addressTextColoredE {
+    color: #2677FF;
+}
+.addressTextColoredF {
     color: #2677FF;
 }
 

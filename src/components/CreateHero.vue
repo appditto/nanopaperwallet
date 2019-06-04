@@ -70,6 +70,16 @@
                     <span class="h3 w600">F)</span>
                   </div>
                   <div class="col">
+                    <img class="w-100" src="../assets/img/paperwalletemptyF.svg">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mt-5 px-4">
+                <div class="row d-flex justify-content-lg-between align-items-center">
+                  <div class="col-1 mx-1">
+                    <span class="h3 w600">G)</span>
+                  </div>
+                  <div class="col">
                     <img class="w-100" src="../assets/img/paperwalletinstructions.svg">
                   </div>
                 </div>

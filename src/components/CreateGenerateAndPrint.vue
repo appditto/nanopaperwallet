@@ -13,6 +13,7 @@
               <option value="D">D</option>
               <option value="E">E</option>
               <option value="F">F</option>
+              <option value="G">G</option>
             </select>
             <span class="h3 text-light">Add</span>
             <select class="mx-2 dropdown-header mb-2" id="amount" v-model="numPaperWallets">
@@ -95,7 +96,7 @@ export default Vue.extend({
   methods: {
     generateWallets() {
       for (let i = 0; i < this.numPaperWallets; i++) {
-        if (this.design != 'F') {
+        if (this.design != 'G') {
           WalletGen.genWallet().then(wallet => {
             this.wallets.push({
               address: wallet.address,
@@ -117,9 +118,9 @@ export default Vue.extend({
         }
       }
       let title = this.numPaperWallets
-      if (this.numPaperWallets > 1 && this.design != 'F') {
+      if (this.numPaperWallets > 1 && this.design != 'G') {
         title += " paper wallets have been generated!"
-      } else if (this.design != 'F') {
+      } else if (this.design != 'G') {
         title += " paper wallet has been generated!"
       } else if (this.numPaperWallets > 1) {
         title += " instruction cards have been generated!"
@@ -186,6 +187,9 @@ export default Vue.extend({
     color: #2677FF;
 }
 .addressTextColoredE {
+    color: #2677FF;
+}
+.addressTextColoredF {
     color: #2677FF;
 }
 
