@@ -54,18 +54,11 @@ export default Vue.extend({
   components: {
     PaperWalletType
   },
-  data() {
-    return {
-      selectedFile: null
-    };
-  },
   methods: {
     onFileSelected(event) {
-      this.selectedFile = URL.createObjectURL(event.target.files[0]);
-      console.log(this.selectedFile);
-      document.getElementById("theImage").style.backgroundImage =
-        "url(" + this.selectedFile + ")";
-      document.getElementById("theImage").style.backgroundSize = "50px";
+      this.$store.state.customImage = URL.createObjectURL(
+        event.target.files[0]
+      );
     }
   }
 });

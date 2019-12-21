@@ -14,11 +14,18 @@
           src="../assets/img/paperwalletinstructions.svg"
           alt="Instructions"
         />
-        <img
-          v-else-if="type == 'H'"
-          src="../assets/img/paperwalletinstructions.svg"
-          alt="Custom"
-        />
+        <div v-else-if="type == 'H'" class="w-100 custom-image-container">
+          <img
+            src="../assets/img/paperwalletinstructions.svg"
+            alt="Custom Template"
+          />
+          <img
+            v-if="this.$store.state.customImage"
+            :src="this.$store.state.customImage"
+            alt="Custom Image"
+            class="custom-image"
+          />
+        </div>
       </div>
     </div></div
 ></template>

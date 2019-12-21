@@ -339,3 +339,17 @@ a:hover,
 a:active {
       color: white;
 }
+
+.custom-image-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+}
+
+.custom-image {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1000;
+}

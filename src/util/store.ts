@@ -1,16 +1,18 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export const store = new Vuex.Store({
-     state: {
-          // property
-     },
-     mutations: {
-          //
-     },
-     getters: {
-          //
-     }
-})
+  state: {
+    customImage: null
+  },
+  mutations: {
+    changeCustomImage(state, customImage) {
+      state.customImage = customImage;
+    }
+  },
+  getters: {
+    customImage: state => state.customImage
+  }
+});

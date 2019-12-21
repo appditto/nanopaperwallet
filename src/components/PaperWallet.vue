@@ -92,7 +92,19 @@
       v-else-if="design == 'E'"
       src="../assets/img/paperwalletemptyE.svg"
     />
-    <img svg-inline v-else src="../assets/img/paperwalletemptyF.svg" />
+    <img
+      svg-inline
+      v-else-if="design == 'F'"
+      src="../assets/img/paperwalletemptyF.svg"
+    />
+    <div v-else class="w-100 custom-image-container">
+      <img svg-inline src="../assets/img/paperwalletinstructions.svg" />
+      <img
+        v-if="this.$store.state.customImage"
+        :src="this.$store.state.customImage"
+        class="custom-image"
+      />
+    </div>
 
     <!-- Address -->
     <div class="addressText" v-html="twoLineAddress()" />
