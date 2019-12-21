@@ -94,6 +94,9 @@ export default Vue.extend({
       generatedWalletList: ""
     };
   },
+  components: {
+    PaperWallet
+  },
   methods: {
     generateWallets() {
       for (let i = 0; i < this.numPaperWallets; i++) {
@@ -234,9 +237,6 @@ export default Vue.extend({
         `
       ]);
     }
-  },
-  components: {
-    PaperWallet
   }
 });
 </script>
