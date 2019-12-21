@@ -15,10 +15,7 @@
           alt="Instructions"
         />
         <div v-else-if="type == 'H'" class="w-100 custom-image-container">
-          <img
-            src="../assets/img/paperwalletinstructions.svg"
-            alt="Custom Template"
-          />
+          <img src="../assets/img/paperwalletinstructions.svg" alt="Custom Template" />
           <img
             v-if="this.$store.state.customImage"
             :src="this.$store.state.customImage"
@@ -27,8 +24,9 @@
           />
         </div>
       </div>
-    </div></div
-></template>
+    </div>
+  </div>
+</template>
 
 <script>
 import Vue from "vue";

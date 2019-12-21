@@ -5,8 +5,19 @@
         <div class="row d-flex justify-content-center align-items-center pt-4 pb-5">
           <div class="col-10">
             <div class="row d-flex justify-content-center align-items-center">
-              <div class="col-12"><h4 class="text-center w700">Scan to donate or<br> tap on the QR to send directly</h4></div>
-              <div class="col-11 col-lg-5"><a href="xrb:xrb_3k6yicqkp5i9hc97nt3gbytuyih8smp7wxgqjxdgmgdh8g3gt4fg7x9qwg3r?amount=1000000000000000000000000000000"><img class="w-100 grow mt-3" src="../assets/img/donate-qr.svg"></a></div>
+              <div class="col-12">
+                <h4 class="text-center w700">
+                  Scan to donate or
+                  <br />tap on the QR to send directly
+                </h4>
+              </div>
+              <div class="col-11 col-lg-5">
+                <a
+                  href="xrb:xrb_3k6yicqkp5i9hc97nt3gbytuyih8smp7wxgqjxdgmgdh8g3gt4fg7x9qwg3r?amount=1000000000000000000000000000000"
+                >
+                  <img class="w-100 grow mt-3" src="../assets/img/donate-qr.svg" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -19,7 +30,7 @@
       <div class="container-fluid mx-auto bg-donate py-5 my-5 pl-donate">
         <div class="row d-flex justify-content-center align-middle pl-hero mt-4">
           <div class="col-12 col-lg-3">
-            <img class="cup-svg position-absolute margin-cup" src="../assets/img/cup.svg">
+            <img class="cup-svg position-absolute margin-cup" src="../assets/img/cup.svg" />
           </div>
           <div class="col-12 col-lg-8 align-self-center px-0 px-lg-5 mt-5 mt-lg-0">
             <h3

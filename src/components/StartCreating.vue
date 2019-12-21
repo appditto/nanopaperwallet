@@ -3,27 +3,39 @@
     <div class="container-fluid mx-auto">
       <div class="row d-flex justify-content-center justify-content-lg-between align-middle px-0">
         <div class="col-12 col-lg-5 align-self-center d-none d-lg-block">
-            <h1 class="w700 text-center text-lg-left mx-2">
-              Ready to create
-              <br><span class="text-primary">paper wallets</span>?
-            </h1>
-            <h5 class="mx-2">If you read our suggestions, that means you’re ready to go. Let’s start creating your paper wallets.</h5>
-            <router-link to="/create" tag="button"
-              class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 my-3 mx-auto mx-lg-2"
-            >Start Creating</router-link>
+          <h1 class="w700 text-center text-lg-left mx-2">
+            Ready to create
+            <br />
+            <span class="text-primary">paper wallets</span>?
+          </h1>
+          <h5
+            class="mx-2"
+          >If you read our suggestions, that means you’re ready to go. Let’s start creating your paper wallets.</h5>
+          <router-link
+            to="/create"
+            tag="button"
+            class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 my-3 mx-auto mx-lg-2"
+          >Start Creating</router-link>
         </div>
         <div class="col-12 col-lg-7 pl-4 pl-md-5 pr-0">
-          <img class="w-100" src="../assets/img/bg-startcreating.svg">
+          <img class="w-100" src="../assets/img/bg-startcreating.svg" />
         </div>
         <div class="col-12 col-lg-5 align-self-center mt-4 d-block d-lg-none">
           <div class="ml-herotext px-0">
             <h1 class="w700 text-center text-lg-left mx-2">
               Ready to create
-              <br><span class="text-primary">paper wallets</span>?
+              <br />
+              <span class="text-primary">paper wallets</span>?
             </h1>
-            <h5 class="mx-2 text-center">If you read our suggestions, that means you’re ready to go. Let’s start creating your paper wallets.</h5>
+            <h5
+              class="mx-2 text-center"
+            >If you read our suggestions, that means you’re ready to go. Let’s start creating your paper wallets.</h5>
             <div class="row d-flex justify-content-center">
-              <router-link to="/create" tag="button" class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 mt-2">Start Creating</router-link>
+              <router-link
+                to="/create"
+                tag="button"
+                class="btn btn-lg btn-my btn-my-shadow text-light w600 px-5 mt-2"
+              >Start Creating</router-link>
             </div>
           </div>
         </div>

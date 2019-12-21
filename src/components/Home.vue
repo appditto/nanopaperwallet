@@ -1,8 +1,8 @@
 <template>
   <div class="overflow-x-hidden" id="home-section">
-      <Navbar :showRedeemButton="true"/>
-      <BodySection/>
-      <Footer/>
+    <Navbar :showRedeemButton="true" />
+    <BodySection />
+    <Footer />
   </div>
 </template>
 
@@ -17,7 +17,7 @@ export default Vue.extend({
   components: {
     BodySection,
     Navbar,
-    Footer,
+    Footer
   }
 });
 </script>

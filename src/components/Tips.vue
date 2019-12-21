@@ -11,7 +11,7 @@
             <div class="divider my-4 mx-auto"></div>
             <div class="col-12 col-md-6 my-4 px-4 px-md-5">
               <div class="row d-flex justify-content-center justify-content-md-start px-3">
-                <img class="icon" src="../assets/img/wifi.svg">
+                <img class="icon" src="../assets/img/wifi.svg" />
               </div>
               <h3 class="w700 text-center text-md-left text-primary mt-2">Go Offline</h3>
               <p
@@ -20,7 +20,7 @@
             </div>
             <div class="col-12 col-md-6 my-4 px-4 px-md-5">
               <div class="row d-flex justify-content-center justify-content-md-end px-3">
-                <img class="icon" src="../assets/img/printer.svg">
+                <img class="icon" src="../assets/img/printer.svg" />
               </div>
               <h3 class="w700 text-center text-md-right text-primary mt-2">Use a Dumb Printer</h3>
               <p
@@ -29,7 +29,7 @@
             </div>
             <div class="col-12 col-md-6 my-4 px-4 px-md-5">
               <div class="row d-flex justify-content-center justify-content-md-start px-3">
-                <img class="icon" src="../assets/img/wallet.svg">
+                <img class="icon" src="../assets/img/wallet.svg" />
               </div>
               <h3 class="w700 text-center text-md-left text-primary mt-2">Withdrawing the Funds</h3>
               <p
@@ -38,7 +38,7 @@
             </div>
             <div class="col-12 col-md-6 my-4 px-4 px-md-5">
               <div class="row d-flex justify-content-center justify-content-md-end px-3">
-                <img class="icon" src="../assets/img/linux.svg">
+                <img class="icon" src="../assets/img/linux.svg" />
               </div>
               <h3 class="w700 text-center text-md-right text-primary mt-2">Use a Clean OS</h3>
               <p
@@ -48,7 +48,7 @@
             <div class="divider mt-4 mb-2 mx-auto"></div>
             <div class="col-12">
               <div class="row d-flex justify-content-center">
-                <img class="icon-2" src="../assets/img/arrow.svg">
+                <img class="icon-2" src="../assets/img/arrow.svg" />
               </div>
             </div>
           </div>

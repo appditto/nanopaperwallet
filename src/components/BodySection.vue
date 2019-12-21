@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Hero/>
-    <Questions/>
-    <Designs/>
-    <Tips/>
-    <StartCreating/>
-    <Donate/>
+    <Hero />
+    <Questions />
+    <Designs />
+    <Tips />
+    <StartCreating />
+    <Donate />
   </div>
 </template>
 
@@ -28,7 +28,7 @@ export default Vue.extend({
     Supplements,
     Tips,
     StartCreating,
-    Donate,
+    Donate
   }
 });
 </script>
