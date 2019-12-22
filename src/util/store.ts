@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-    customImage: null
+    customImage: require('../assets/img/bridge.jpg')
   },
   mutations: {
     changeCustomImage(state, customImage) {

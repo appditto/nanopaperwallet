@@ -350,7 +350,15 @@ a:active {
       position: absolute;
       width: 100%;
       top: 0;
+      bottom: 0;
       left: 0;
+      right: 0;
+      padding-left: 2px;
+      padding-right: 2px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
       z-index: -1000;
 }
 
@@ -370,4 +378,8 @@ label{
 .inputfile:focus + label {
 	outline: 1px dotted #000;
 	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.z-1000{
+      z-index: 1000;
 }

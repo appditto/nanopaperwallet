@@ -1,6 +1,6 @@
 <template>
   <div class="col-12 mt-5 px-4" v-bind:class="{'col-md-6':type != 'Custom'} ">
-    <div v-if="type == 'Custom'" class="row d-flex justify-content-center align-items-center mb-2">
+    <div v-if="type == 'Custom'" class="row d-flex justify-content-center align-items-center mb-3">
       <h4 class="w600 text-center mr-2">Make Your Own:</h4>
       <input
         accept="image/png, image/jpeg, .svg"
@@ -31,13 +31,13 @@
           alt="Instructions"
         />
         <div v-else-if="type == 'Custom'" class="w-100 custom-image-container">
-          <img src="../assets/img/paperwalletinstructions.svg" alt="Custom Template" />
           <img
             v-if="this.$store.state.customImage"
             :src="this.$store.state.customImage"
             alt="Custom Image"
             class="custom-image"
           />
+          <img src="../assets/img/paperwalletemptyFg.svg" alt="Foreground" class="w-100" />
         </div>
       </div>
     </div>

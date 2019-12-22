@@ -1,35 +1,60 @@
 <template>
   <div class="wallet-container" v-if="design != 'G'">
     <!-- QR Code for SEED -->
-    <div class="wallet-qr" v-html="qrSeed" />
-    <img svg-inline v-if="design == 'A'" class="address-logo" src="../assets/img/QRlogoA.svg" />
-    <img svg-inline v-else-if="design == 'B'" class="address-logo" src="../assets/img/QRlogoB.svg" />
-    <img svg-inline v-else-if="design == 'C'" class="address-logo" src="../assets/img/QRlogoC.svg" />
-    <img svg-inline v-else-if="design == 'D'" class="address-logo" src="../assets/img/QRlogoA.svg" />
-    <img svg-inline v-else class="address-logo" src="../assets/img/QRlogoA.svg" />
-
-    <!-- QR Code for ADDRESS -->
-    <div class="address-qr" v-html="qrAddress" />
-    <img svg-inline v-if="design == 'A'" class="address-logo-right" src="../assets/img/QRlogoA.svg" />
+    <div class="wallet-qr z-1000" v-html="qrSeed" />
+    <img
+      svg-inline
+      v-if="design == 'A'"
+      class="address-logo z-1000"
+      src="../assets/img/QRlogoA.svg"
+    />
     <img
       svg-inline
       v-else-if="design == 'B'"
-      class="address-logo-right"
+      class="address-logo z-1000"
       src="../assets/img/QRlogoB.svg"
     />
     <img
       svg-inline
       v-else-if="design == 'C'"
-      class="address-logo-right"
+      class="address-logo z-1000"
       src="../assets/img/QRlogoC.svg"
     />
     <img
       svg-inline
       v-else-if="design == 'D'"
-      class="address-logo-right"
+      class="address-logo z-1000"
       src="../assets/img/QRlogoA.svg"
     />
-    <img svg-inline v-else class="address-logo-right" src="../assets/img/QRlogoA.svg" />
+    <img svg-inline v-else class="address-logo z-1000" src="../assets/img/QRlogoA.svg" />
+
+    <!-- QR Code for ADDRESS -->
+    <div class="address-qr z-1000" v-html="qrAddress" />
+    <img
+      svg-inline
+      v-if="design == 'A'"
+      class="address-logo-right z-1000"
+      src="../assets/img/QRlogoA.svg"
+    />
+    <img
+      svg-inline
+      v-else-if="design == 'B'"
+      class="address-logo-right z-1000"
+      src="../assets/img/QRlogoB.svg"
+    />
+    <img
+      svg-inline
+      v-else-if="design == 'C'"
+      class="address-logo-right z-1000"
+      src="../assets/img/QRlogoC.svg"
+    />
+    <img
+      svg-inline
+      v-else-if="design == 'D'"
+      class="address-logo-right z-1000"
+      src="../assets/img/QRlogoA.svg"
+    />
+    <img svg-inline v-else class="address-logo-right z-1000" src="../assets/img/QRlogoA.svg" />
 
     <!-- Paper Wallet Design -->
     <img svg-inline v-if="design == 'A'" src="../assets/img/paperwalletemptyA.svg" />
@@ -39,7 +64,7 @@
     <img svg-inline v-else-if="design == 'E'" src="../assets/img/paperwalletemptyE.svg" />
     <img svg-inline v-else-if="design == 'F'" src="../assets/img/paperwalletemptyF.svg" />
     <div v-else class="w-100 custom-image-container">
-      <img svg-inline src="../assets/img/paperwalletinstructions.svg" />
+      <img svg-inline src="../assets/img/paperwalletemptyFg.svg" />
       <img
         v-if="this.$store.state.customImage"
         :src="this.$store.state.customImage"
@@ -48,8 +73,16 @@
     </div>
 
     <!-- Address -->
-    <div class="addressText" v-html="twoLineAddress()" />
-    <div class="seedText" v-html="seedTextStyled()" />
+    <div
+      v-bind:class="{'textWhite':design == 'Custom'}"
+      class="z-1000 addressText"
+      v-html="twoLineAddress()"
+    />
+    <div
+      v-bind:class="{'textWhite':design == 'Custom'}"
+      class="seedText z-1000"
+      v-html="seedTextStyled()"
+    />
   </div>
   <div class="wallet-container" v-else>
     <img svg-inline src="../assets/img/paperwalletinstructions.svg" />
@@ -143,6 +176,10 @@ export default Vue.extend({
   font-weight: 700;
 }
 
+.textWhite {
+  color: #ffffff !important;
+}
+
 .seedText {
   position: absolute;
   font-family: "Overpass Mono", monospace;
@@ -175,6 +212,9 @@ export default Vue.extend({
 }
 .addressTextColoredF {
   color: #2677ff;
+}
+.addressTextColoredCustom {
+  color: #ffffff;
 }
 
 .wallet-container {
