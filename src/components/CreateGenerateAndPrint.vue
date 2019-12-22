@@ -14,7 +14,7 @@
               <option value="E">E</option>
               <option value="F">F</option>
               <option value="G">G</option>
-              <option value="H">H</option>
+              <option value="Custom">Custom</option>
             </select>
             <span class="h3 text-light">Add</span>
             <select class="mx-2 dropdown-header mb-2" id="amount" v-model="numPaperWallets">
@@ -52,7 +52,7 @@
               readonly
             ></textarea>
           </div>
-          <div class="col-12">
+          <div v-if="wallets.length>0" class="col-12">
             <div class="row d-flex justify-content-center">
               <button
                 class="btn btn-lg btn-my btn-my-shadow text-light w600 px-4 px-lg-5 mt-3"
@@ -61,7 +61,8 @@
             </div>
           </div>
           <div
-            class="col-12 paper mt-4 px-4 py-2 px-lg-5 py-lg-4 mb-5"
+            v-if="wallets.length>0"
+            class="col-12 paper my-4 px-4 py-2 px-lg-5 py-lg-4"
             id="printableContent"
             ref="printableContent"
           >

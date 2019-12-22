@@ -1,5 +1,5 @@
 <template>
-  <div class="section pr-donate py-lg-5 my-lg-5">
+  <div class="section pr-donate pt-lg-5 mt-lg-5">
     <simple-modal v-model="isShow">
       <template slot="body">
         <div class="row d-flex justify-content-center align-items-center pt-4 pb-5">

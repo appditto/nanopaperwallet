@@ -1,5 +1,5 @@
 <template>
-  <div class="section bg-footer">
+  <div class="section bg-footer mt-5">
     <div class="container-fluid">
       <div class="row justify-content-center d-flex">
         <div class="col-12 my-4">

@@ -14,13 +14,6 @@
               CAUTION: The paper wallets are not encrypted, so make sure to keep
               them safe and away from strangers.
             </h5>
-            <div class="row d-flex justify-content-center align-content-center">
-              <div class="col-12">
-                <div class="row d-flex justify-content-center align-content-center">
-                  <input type="file" @change="onFileSelected" />
-                </div>
-              </div>
-            </div>
             <div class="row d-flex justify-content-center align-content-middle">
               <PaperWalletType type="A" />
               <PaperWalletType type="B" />
@@ -29,7 +22,7 @@
               <PaperWalletType type="E" />
               <PaperWalletType type="F" />
               <PaperWalletType type="G" />
-              <PaperWalletType type="H" />
+              <PaperWalletType type="Custom" />
             </div>
           </div>
         </div>
@@ -45,13 +38,6 @@ export default Vue.extend({
   name: "CreateHero",
   components: {
     PaperWalletType
-  },
-  methods: {
-    onFileSelected(event) {
-      this.$store.state.customImage = URL.createObjectURL(
-        event.target.files[0]
-      );
-    }
   }
 });
 </script>
