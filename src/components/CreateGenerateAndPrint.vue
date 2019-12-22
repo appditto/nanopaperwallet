@@ -197,6 +197,9 @@ export default Vue.extend({
 .addressTextColoredF {
     color: #2677FF;
 }
+.textWhite {
+    color: #ffffff !important;
+}
 
 .wallet-container {
     width: 9.25in;
@@ -234,7 +237,29 @@ export default Vue.extend({
     position: absolute;
     top: 1.05in;
     right: 0.58in
-}        
+}
+.custom-image-container {
+      position: relative;
+      overflow: hidden;
+      width: 9.25in;
+}
+.custom-image {
+      position: absolute;
+      width: 9.25in;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding-left: 1px;
+      padding-right: 3px;
+      padding-top: 3px;
+      padding-bottom: 9px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      z-index: -1000;
+}      
         `
       ]);
     }
