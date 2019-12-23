@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon-align-to-center-horizontal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon-align-to-center-horizontal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8.75,12 L8.75,15.25 C8.75,15.6642136 8.41421356,16 8,16 C7.58578644,16 7.25,15.6642136 7.25,15.25 L7.25,12 L8.75,12 Z M15,5 C15.5522847,5 16,5.44771525 16,6 L16,10 C16,10.5522847 15.5522847,11 15,11 L1,11 C0.44771525,11 -8.20543045e-16,10.5522847 -8.8817842e-16,10 L-8.8817842e-16,6 C-9.55813795e-16,5.44771525 0.44771525,5 1,5 L15,5 Z M8,-1.77635684e-15 C8.41421356,-1.85244664e-15 8.75,0.335786438 8.75,0.75 L8.75,4 L7.25,4 L7.25,0.75 C7.25,0.335786438 7.58578644,-1.70026704e-15 8,-1.77635684e-15 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(8.000000, 8.000000) rotate(90.000000) translate(-8.000000, -8.000000) "></path>
+    </g>
+</svg>

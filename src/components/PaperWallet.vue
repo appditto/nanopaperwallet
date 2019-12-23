@@ -68,7 +68,7 @@
       <img
         v-if="this.$store.state.customImage"
         :src="this.$store.state.customImage"
-        class="custom-image"
+        class="custom-image align-to-center-vertical"
       />
     </div>
 

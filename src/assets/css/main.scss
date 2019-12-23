@@ -349,16 +349,29 @@ a:active {
 .custom-image {
       position: absolute;
       width: 100%;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
       padding-left: 2px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
-      margin-bottom: auto;
       z-index: -1000;
+}
+
+.align-to-top{
+      top: 0;
+      bottom: auto;
+      margin-top: 0;
+      margin-bottom: auto;
+}
+
+.align-to-bottom{
+      bottom: 0;
+      top: auto;
+      margin-bottom: 0;
+      margin-top: auto;
+}
+
+.align-to-center-vertical{
+      bottom: 0;
+      top: 0;
+      margin-bottom: auto;
+      margin-top: auto;
 }
 
 .inputfile {
@@ -381,4 +394,13 @@ label{
 
 .z-1000{
       z-index: 1000;
+}
+
+.icon-small{
+      width: 1.5rem;
+      height: 1.5rem;
+}
+
+.op-50{
+      opacity: 0.5;
 }

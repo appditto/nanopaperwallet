@@ -30,14 +30,45 @@
           src="../assets/img/paperwalletinstructions.svg"
           alt="Instructions"
         />
-        <div v-else-if="type == 'Custom'" class="w-100 custom-image-container">
-          <img
-            v-if="this.$store.state.customImage"
-            :src="this.$store.state.customImage"
-            alt="Custom Image"
-            class="custom-image"
-          />
-          <img src="../assets/img/paperwalletemptyFg.svg" alt="Foreground" class="w-100" />
+        <div v-else-if="type == 'Custom'">
+          <div class="col">
+            <div class="w-100 custom-image-container">
+              <img
+                v-if="this.$store.state.customImage"
+                :src="this.$store.state.customImage"
+                alt="Custom Image"
+                class="custom-image"
+                v-bind:class="{  'align-to-top':alignToTop, 'align-to-bottom': alignToBottom,  'align-to-center-vertical':alignToCenterVertical}"
+              />
+              <img src="../assets/img/paperwalletemptyFg.svg" alt="Foreground" class="w-100" />
+            </div>
+            <div class="row d-flex justify-content-center align-items center mt-4">
+              <button class="btn btn-my p-1 m-1" v-bind:class="{'op-50':!alignToTop} ">
+                <img
+                  src="../assets/img/custom-paperwallet/icon-align-to-top.svg"
+                  alt="Align to Top"
+                  class="icon-small m-2"
+                  @click="alignToTopFunction()"
+                />
+              </button>
+              <button class="btn btn-my p-1 m-1" v-bind:class="{'op-50':!alignToCenterVertical}">
+                <img
+                  src="../assets/img/custom-paperwallet/icon-align-to-center-horizontal.svg"
+                  alt="Align to Center Horizontal"
+                  class="icon-small m-2"
+                  @click="alignToCenterVerticalFunction()"
+                />
+              </button>
+              <button class="btn btn-my p-1 m-1" v-bind:class="{'op-50':!alignToBottom}">
+                <img
+                  src="../assets/img/custom-paperwallet/icon-align-to-bottom.svg"
+                  alt="Align to Bottom"
+                  class="icon-small m-2"
+                  @click="alignToBottomFunction()"
+                />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -52,6 +83,13 @@ export default Vue.extend({
   props: {
     type: String
   },
+  data() {
+    return {
+      alignToTop: false,
+      alignToBottom: false,
+      alignToCenterVertical: true
+    };
+  },
   methods: {
     onFileSelected(event) {
       this.$store.state.customImage = URL.createObjectURL(
@@ -60,6 +98,21 @@ export default Vue.extend({
       document.getElementById("filelabel").innerText = event.target.value
         .split("\\")
         .pop();
+    },
+    alignToTopFunction() {
+      this.alignToBottom = false;
+      this.alignToCenterVertical = false;
+      this.alignToTop = true;
+    },
+    alignToBottomFunction() {
+      this.alignToTop = false;
+      this.alignToCenterVertical = false;
+      this.alignToBottom = true;
+    },
+    alignToCenterVerticalFunction() {
+      this.alignToBottom = false;
+      this.alignToTop = false;
+      this.alignToCenterVertical = true;
     }
   }
 });

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon-align-to-left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon-align-to-left" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0.75,0 C1.16421356,-7.6089797e-17 1.5,0.335786438 1.5,0.75 L1.5,15.25 C1.5,15.6642136 1.16421356,16 0.75,16 C0.335786438,16 5.07265313e-17,15.6642136 0,15.25 L0,0.75 C-5.07265313e-17,0.335786438 0.335786438,7.6089797e-17 0.75,0 Z M15,4 C15.5522847,4 16,4.44771525 16,5 L16,11 C16,11.5522847 15.5522847,12 15,12 L2.5,12 L2.5,4 L15,4 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+    </g>
+</svg>
