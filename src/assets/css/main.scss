@@ -28,6 +28,15 @@ body {
       border: none;
 }
 
+.gradient-my-50{
+      background: rgb(38, 119, 255);
+      background: -moz-linear-gradient(45deg, rgba(38, 119, 255, 0.5) 0%, rgba(32, 32, 181, 0.5) 100%);
+      background: -webkit-linear-gradient(45deg, rgba(38, 119, 255, 0.5) 0%, rgba(32, 32, 181, 0.5) 100%);
+      background: linear-gradient(45deg, rgba(38, 119, 255, 0.5) 0%, rgba(32, 32, 181, 0.5) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2677ff", endColorstr="#2020b5", GradientType=1);
+      border: none;
+}
+
 .btn-my-outline,
 .btn-my-outline:visited,
 .btn-my-outline:active {
@@ -348,7 +357,6 @@ a:active {
 
 .custom-image {
       position: absolute;
-      width: 100%;
       padding-left: 2px;
       z-index: -1000;
 }
@@ -372,6 +380,37 @@ a:active {
       top: 0;
       margin-bottom: auto;
       margin-top: auto;
+}
+
+.align-to-left{
+      left: 0;
+      right: auto;
+      margin-left: 0;
+      margin-right: auto;
+}
+
+.align-to-right{
+      right: 0;
+      left: auto;
+      margin-right: 0;
+      margin-left: auto;
+}
+
+.align-to-center-horizontal{
+      right: 0;
+      left: 0;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.fit-to-width{
+      width: 100%;
+      height: auto;
+}
+
+.fit-to-height{
+      height: 100%;
+      width: auto;
 }
 
 .inputfile {
@@ -403,4 +442,20 @@ label{
 
 .op-50{
       opacity: 0.5;
+}
+
+.rounded-1{
+      border-radius: 0.5rem;
+}
+
+.rounded-0{
+      border-radius: 0rem;
+}
+
+.rounded-1-left{
+      border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.rounded-1-right{
+      border-radius: 0rem 0.5rem 0.5rem 0rem;
 }

@@ -38,35 +38,72 @@
                 :src="this.$store.state.customImage"
                 alt="Custom Image"
                 class="custom-image"
-                v-bind:class="{  'align-to-top':alignToTop, 'align-to-bottom': alignToBottom,  'align-to-center-vertical':alignToCenterVertical}"
+                v-bind:class="{  'align-to-top':alignToTop, 'align-to-bottom': alignToBottom,  'align-to-center-vertical':alignToCenterVertical, 'fit-to-width':fitToWidth, 'fit-to-height':fitToHeight, 'align-to-left':alignToLeft, 'align-to-right': alignToRight,  'align-to-center-horizontal':alignToCenterHorizontal,}"
               />
               <img src="../assets/img/paperwalletemptyFg.svg" alt="Foreground" class="w-100" />
             </div>
             <div class="row d-flex justify-content-center align-items center mt-4">
-              <button class="btn btn-my p-1 m-1" v-bind:class="{'op-50':!alignToTop} ">
-                <img
-                  src="../assets/img/custom-paperwallet/icon-align-to-top.svg"
-                  alt="Align to Top"
-                  class="icon-small m-2"
-                  @click="alignToTopFunction()"
-                />
-              </button>
-              <button class="btn btn-my p-1 m-1" v-bind:class="{'op-50':!alignToCenterVertical}">
-                <img
-                  src="../assets/img/custom-paperwallet/icon-align-to-center-horizontal.svg"
-                  alt="Align to Center Horizontal"
-                  class="icon-small m-2"
-                  @click="alignToCenterVerticalFunction()"
-                />
-              </button>
-              <button class="btn btn-my p-1 m-1" v-bind:class="{'op-50':!alignToBottom}">
-                <img
-                  src="../assets/img/custom-paperwallet/icon-align-to-bottom.svg"
-                  alt="Align to Bottom"
-                  class="icon-small m-2"
-                  @click="alignToBottomFunction()"
-                />
-              </button>
+              <!-- Fit to Width or Height -->
+              <div class="gradient-my-50 rounded-1 mx-2">
+                <button
+                  v-on:click="fitToWidthFunction"
+                  class="btn p-1 rounded-1-left"
+                  v-bind:class="fitToWidth?['btn-my']:''"
+                >
+                  <img
+                    src="../assets/img/custom-paperwallet/icon-fit-to-width.svg"
+                    alt="Fit to Width"
+                    class="icon-small m-2"
+                  />
+                </button>
+                <button
+                  v-on:click="fitToHeightFunction"
+                  class="btn p-1 rounded-1-right"
+                  v-bind:class="fitToHeight?['btn-my']:''"
+                >
+                  <img
+                    src="../assets/img/custom-paperwallet/icon-fit-to-height.svg"
+                    alt="Fit to Height"
+                    class="icon-small m-2"
+                  />
+                </button>
+              </div>
+              <!-- Align to Top, Bottom, V-Center or Left, Right, H-Center -->
+              <div class="gradient-my-50 rounded-1 mx-2">
+                <button
+                  v-on:click="fitToWidth?alignToTopFunction():alignToLeftFunction()"
+                  class="btn p-1 rounded-1-left"
+                  v-bind:class="fitToWidth&&alignToTop||fitToHeight&&alignToLeft?['btn-my']:''"
+                >
+                  <img
+                    :src="require('../assets/img/custom-paperwallet/icon-' + (fitToWidth ? 'align-to-top.svg':'align-to-left.svg'))"
+                    alt="Align to Top"
+                    class="icon-small m-2"
+                  />
+                </button>
+                <button
+                  v-on:click="fitToWidth?alignToCenterVerticalFunction():alignToCenterHorizontalFunction()"
+                  class="btn p-1 rounded-0"
+                  v-bind:class="fitToWidth&&alignToCenterVertical||fitToHeight&&alignToCenterHorizontal?['btn-my']:''"
+                >
+                  <img
+                    :src="require('../assets/img/custom-paperwallet/icon-' + (fitToWidth ? 'align-to-center-horizontal.svg':'align-to-center-vertical.svg'))"
+                    alt="Align to Center Horizontal"
+                    class="icon-small m-2"
+                  />
+                </button>
+                <button
+                  v-on:click="fitToWidth?alignToBottomFunction():alignToRightFunction()"
+                  class="btn p-1 rounded-1-right"
+                  v-bind:class="fitToWidth&&alignToBottom||fitToHeight&&alignToRight?['btn-my']:''"
+                >
+                  <img
+                    :src="require('../assets/img/custom-paperwallet/icon-' + (fitToWidth ? 'align-to-bottom.svg':'align-to-right.svg'))"
+                    alt="Align to Bottom"
+                    class="icon-small m-2"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -85,9 +122,14 @@ export default Vue.extend({
   },
   data() {
     return {
+      fitToWidth: true,
+      fitToHeight: false,
       alignToTop: false,
       alignToBottom: false,
-      alignToCenterVertical: true
+      alignToCenterVertical: true,
+      alignToLeft: false,
+      alignToRight: false,
+      alignToCenterHorizontal: true
     };
   },
   methods: {
@@ -98,6 +140,16 @@ export default Vue.extend({
       document.getElementById("filelabel").innerText = event.target.value
         .split("\\")
         .pop();
+    },
+    fitToWidthFunction() {
+      this.fitToHeight = false;
+      this.fitToWidth = true;
+      this.alignToCenterVerticalFunction();
+    },
+    fitToHeightFunction() {
+      this.fitToWidth = false;
+      this.fitToHeight = true;
+      this.alignToCenterHorizontalFunction();
     },
     alignToTopFunction() {
       this.alignToBottom = false;
@@ -113,6 +165,21 @@ export default Vue.extend({
       this.alignToBottom = false;
       this.alignToTop = false;
       this.alignToCenterVertical = true;
+    },
+    alignToLeftFunction() {
+      this.alignToRight = false;
+      this.alignToCenterHorizontal = false;
+      this.alignToLeft = true;
+    },
+    alignToRightFunction() {
+      this.alignToLeft = false;
+      this.alignToCenterHorizontal = false;
+      this.alignToRight = true;
+    },
+    alignToCenterHorizontalFunction() {
+      this.alignToLeft = false;
+      this.alignToRight = false;
+      this.alignToCenterHorizontal = true;
     }
   }
 });
