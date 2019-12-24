@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon-dark</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="16" height="16"></rect>
+    </defs>
+    <g id="icon-dark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Rectangle"></g>
+        <path d="M5.01844052,0.893461633 C5.75140288,0.470285615 6.52303669,0.174764476 7.30759744,0 C4.9785079,2.53486251 4.4492726,6.38351002 6.26172648,9.52277222 C8.07388024,12.6615146 11.6706331,14.1275414 15.0303337,13.3791528 C14.4870834,13.9712131 13.8457282,14.4912689 13.1132857,14.9141447 C9.24158096,17.1494745 4.29085132,15.8229305 2.05552155,11.9512258 C-0.179808222,8.07952104 1.14673579,3.1287914 5.01844052,0.893461633 Z" id="Path" fill="#FFFFFF" mask="url(#mask-2)"></path>
+    </g>
+</svg>

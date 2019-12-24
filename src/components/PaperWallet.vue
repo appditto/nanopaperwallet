@@ -64,7 +64,7 @@
     <img svg-inline v-else-if="design == 'E'" src="../assets/img/paperwalletemptyE.svg" />
     <img svg-inline v-else-if="design == 'F'" src="../assets/img/paperwalletemptyF.svg" />
     <div v-else class="w-100 custom-image-container">
-      <img svg-inline src="../assets/img/paperwalletemptyFg.svg" />
+      <img svg-inline src="../assets/img/custom-paperwallet/paperwalletemptyFgLightBorder.svg" />
       <img
         v-if="this.$store.state.customImage"
         :src="this.$store.state.customImage"
