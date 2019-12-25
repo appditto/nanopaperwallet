@@ -1,7 +1,6 @@
 /* =============================================================================
    App specific SCSS file.
    ========================================================================== */
-
 @import "./includes/theme";
 @import "./includes/bootstrap";
 @import "./includes/mixins";
@@ -402,12 +401,12 @@ a:active {
 }
 
 .fit-to-width{
-      width: 100%;
+      width: 99.75%;
       height: auto;
 }
 
 .fit-to-height{
-      height: 100%;
+      height: 99.75%;
       width: auto;
 }
 

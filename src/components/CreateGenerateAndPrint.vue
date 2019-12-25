@@ -150,7 +150,11 @@ export default Vue.extend({
 }
 
 @media print{@page {size: landscape}}
-
+@media print {
+    body { 
+        -webkit-print-color-adjust: exact; 
+      }
+}
 @page  
 { 
     /* this affects the margin in the printer settings */ 
@@ -251,10 +255,10 @@ export default Vue.extend({
       position: relative;
       overflow: hidden;
       width: 9.25in;
+      height: 2.6in;
 }
 .custom-image {
       position: absolute;
-      width: 9.25in;
       z-index: -1000;
 }
 
@@ -301,12 +305,12 @@ export default Vue.extend({
 }
 
 .fit-to-width{
-      width: 100%;
+      width: 99.75%;
       height: auto;
 }
 
 .fit-to-height{
-      height: 100%;
+      height: 99.75%;
       width: auto;
 }  
         `
