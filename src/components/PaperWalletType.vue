@@ -41,10 +41,10 @@
                 :src="this.$store.state.customImage"
                 alt="Custom Image"
                 class="custom-image"
-                v-bind:class="{  'align-to-top':alignToTop, 'align-to-bottom': alignToBottom,  'align-to-center-vertical':alignToCenterVertical, 'fit-to-width':fitToWidth, 'fit-to-height':fitToHeight, 'align-to-left':alignToLeft, 'align-to-right': alignToRight,  'align-to-center-horizontal':alignToCenterHorizontal,}"
+                v-bind:class="{  'align-to-top':this.$store.state.alignToTop, 'align-to-bottom': this.$store.state.alignToBottom,  'align-to-center-vertical':this.$store.state.alignToCenterVertical, 'fit-to-width':this.$store.state.fitToWidth, 'fit-to-height':this.$store.state.fitToHeight, 'align-to-left':this.$store.state.alignToLeft, 'align-to-right': this.$store.state.alignToRight,  'align-to-center-horizontal':this.$store.state.alignToCenterHorizontal}"
               />
               <img
-                :src="require('../assets/img/custom-paperwallet/paperwalletemptyFg' + (isLight?'Light':'Dark') + (hasBorder?'Border':'')+ '.svg')"
+                :src="require('../assets/img/custom-paperwallet/paperwalletemptyFg' + (this.$store.state.isLight?'Light':'Dark') + '.svg')"
                 alt="Custom Paperwallet Foreground"
                 class="w-100"
               />
@@ -56,9 +56,9 @@
                   <h5 class="text-center w600">Color</h5>
                   <div class="gradient-my-50 rounded-1 mx-3">
                     <button
-                      v-on:click="colorLightFunction"
+                      v-on:click="isLightFunction()"
                       class="btn p-1 rounded-1-left"
-                      v-bind:class="isLight?['btn-my border-1-primary']:''"
+                      v-bind:class=" this.$store.state.isLight?['btn-my border-1-primary']:''"
                     >
                       <img
                         src="../assets/img/custom-paperwallet/icon-light.svg"
@@ -67,42 +67,12 @@
                       />
                     </button>
                     <button
-                      v-on:click="colorDarkFunction"
+                      v-on:click="isDarkFunction()"
                       class="btn p-1 rounded-1-right"
-                      v-bind:class="!isLight?['btn-my border-1-primary']:''"
+                      v-bind:class="this.$store.state.isDark?['btn-my border-1-primary']:''"
                     >
                       <img
                         src="../assets/img/custom-paperwallet/icon-dark.svg"
-                        alt="Fit to Height"
-                        class="icon-small m-2"
-                      />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Border -->
-              <div>
-                <div class="col px-0">
-                  <h5 class="text-center w600">Border</h5>
-                  <div class="gradient-my-50 rounded-1 mx-3">
-                    <button
-                      v-on:click="borderFunction"
-                      class="btn p-1 rounded-1-left"
-                      v-bind:class="hasBorder?['btn-my border-1-primary']:''"
-                    >
-                      <img
-                        src="../assets/img/custom-paperwallet/icon-border-yes.svg"
-                        alt="Fit to Width"
-                        class="icon-small m-2"
-                      />
-                    </button>
-                    <button
-                      v-on:click="noBorderFunction"
-                      class="btn p-1 rounded-1-right"
-                      v-bind:class="!hasBorder?['btn-my border-1-primary']:''"
-                    >
-                      <img
-                        src="../assets/img/custom-paperwallet/icon-border-no.svg"
                         alt="Fit to Height"
                         class="icon-small m-2"
                       />
@@ -116,9 +86,9 @@
                   <h5 class="text-center w600">Fit</h5>
                   <div class="gradient-my-50 rounded-1 mx-3">
                     <button
-                      v-on:click="fitToWidthFunction"
+                      v-on:click="fitToWidthFunction()"
                       class="btn p-1 rounded-1-left"
-                      v-bind:class="fitToWidth?['btn-my border-1-primary']:''"
+                      v-bind:class="this.$store.state.fitToWidth?['btn-my border-1-primary']:''"
                     >
                       <img
                         src="../assets/img/custom-paperwallet/icon-fit-to-width.svg"
@@ -127,9 +97,9 @@
                       />
                     </button>
                     <button
-                      v-on:click="fitToHeightFunction"
+                      v-on:click="fitToHeightFunction()"
                       class="btn p-1 rounded-1-right"
-                      v-bind:class="fitToHeight?['btn-my border-1-primary']:''"
+                      v-bind:class="this.$store.state.fitToHeight?['btn-my border-1-primary']:''"
                     >
                       <img
                         src="../assets/img/custom-paperwallet/icon-fit-to-height.svg"
@@ -146,34 +116,34 @@
                   <h5 class="w600 text-center">Alignment</h5>
                   <div class="gradient-my-50 rounded-1 mx-3">
                     <button
-                      v-on:click="fitToWidth?alignToTopFunction():alignToLeftFunction()"
+                      v-on:click="$store.state.fitToWidth?alignToTopFunction():alignToLeftFunction()"
                       class="btn p-1 rounded-1-left"
-                      v-bind:class="fitToWidth&&alignToTop||fitToHeight&&alignToLeft?['btn-my border-1-primary']:''"
+                      v-bind:class="this.$store.state.fitToWidth&&this.$store.state.alignToTop||this.$store.state.fitToHeight&&this.$store.state.alignToLeft?['btn-my border-1-primary']:''"
                     >
                       <img
-                        :src="require('../assets/img/custom-paperwallet/icon-' + (fitToWidth ? 'align-to-top.svg':'align-to-left.svg'))"
+                        :src="require('../assets/img/custom-paperwallet/icon-' + (this.$store.state.fitToWidth ? 'align-to-top.svg':'align-to-left.svg'))"
                         alt="Align to Top"
                         class="icon-small m-2"
                       />
                     </button>
                     <button
-                      v-on:click="fitToWidth?alignToCenterVerticalFunction():alignToCenterHorizontalFunction()"
+                      v-on:click="$store.state.fitToWidth?alignToCenterVerticalFunction():alignToCenterHorizontalFunction()"
                       class="btn p-1 rounded-0"
-                      v-bind:class="fitToWidth&&alignToCenterVertical||fitToHeight&&alignToCenterHorizontal?['btn-my border-1-primary']:''"
+                      v-bind:class="this.$store.state.fitToWidth&&this.$store.state.alignToCenterVertical||this.$store.state.fitToHeight&&this.$store.state.alignToCenterHorizontal?['btn-my border-1-primary']:''"
                     >
                       <img
-                        :src="require('../assets/img/custom-paperwallet/icon-' + (fitToWidth ? 'align-to-center-horizontal.svg':'align-to-center-vertical.svg'))"
+                        :src="require('../assets/img/custom-paperwallet/icon-' + (this.$store.state.fitToWidth ? 'align-to-center-horizontal.svg':'align-to-center-vertical.svg'))"
                         alt="Align to Center Horizontal"
                         class="icon-small m-2"
                       />
                     </button>
                     <button
-                      v-on:click="fitToWidth?alignToBottomFunction():alignToRightFunction()"
+                      v-on:click="$store.state.fitToWidth?alignToBottomFunction():alignToRightFunction()"
                       class="btn p-1 rounded-1-right"
-                      v-bind:class="fitToWidth&&alignToBottom||fitToHeight&&alignToRight?['btn-my border-1-primary']:''"
+                      v-bind:class="this.$store.state.fitToWidth&&this.$store.state.alignToBottom||this.$store.state.fitToHeight&&this.$store.state.alignToRight?['btn-my border-1-primary']:''"
                     >
                       <img
-                        :src="require('../assets/img/custom-paperwallet/icon-' + (fitToWidth ? 'align-to-bottom.svg':'align-to-right.svg'))"
+                        :src="require('../assets/img/custom-paperwallet/icon-' + (this.$store.state.fitToWidth ? 'align-to-bottom.svg':'align-to-right.svg'))"
                         alt="Align to Bottom"
                         class="icon-small m-2"
                       />
@@ -197,20 +167,6 @@ export default Vue.extend({
   props: {
     type: String
   },
-  data() {
-    return {
-      fitToWidth: true,
-      fitToHeight: false,
-      alignToTop: false,
-      alignToBottom: false,
-      alignToCenterVertical: true,
-      alignToLeft: false,
-      alignToRight: false,
-      alignToCenterHorizontal: true,
-      hasBorder: true,
-      isLight: true
-    };
-  },
   methods: {
     onFileSelected(event) {
       this.$store.state.customImage = URL.createObjectURL(
@@ -221,56 +177,52 @@ export default Vue.extend({
         .pop();
     },
     fitToWidthFunction() {
-      this.fitToHeight = false;
-      this.fitToWidth = true;
+      this.$store.state.fitToHeight = false;
+      this.$store.state.fitToWidth = true;
       this.alignToCenterVerticalFunction();
     },
     fitToHeightFunction() {
-      this.fitToWidth = false;
-      this.fitToHeight = true;
+      this.$store.state.fitToWidth = false;
+      this.$store.state.fitToHeight = true;
       this.alignToCenterHorizontalFunction();
     },
     alignToTopFunction() {
-      this.alignToBottom = false;
-      this.alignToCenterVertical = false;
-      this.alignToTop = true;
+      this.$store.state.alignToBottom = false;
+      this.$store.state.alignToCenterVertical = false;
+      this.$store.state.alignToTop = true;
     },
     alignToBottomFunction() {
-      this.alignToTop = false;
-      this.alignToCenterVertical = false;
-      this.alignToBottom = true;
+      this.$store.state.alignToTop = false;
+      this.$store.state.alignToCenterVertical = false;
+      this.$store.state.alignToBottom = true;
     },
     alignToCenterVerticalFunction() {
-      this.alignToBottom = false;
-      this.alignToTop = false;
-      this.alignToCenterVertical = true;
+      this.$store.state.alignToBottom = false;
+      this.$store.state.alignToTop = false;
+      this.$store.state.alignToCenterVertical = true;
     },
     alignToLeftFunction() {
-      this.alignToRight = false;
-      this.alignToCenterHorizontal = false;
-      this.alignToLeft = true;
+      this.$store.state.alignToRight = false;
+      this.$store.state.alignToCenterHorizontal = false;
+      this.$store.state.alignToLeft = true;
     },
     alignToRightFunction() {
-      this.alignToLeft = false;
-      this.alignToCenterHorizontal = false;
-      this.alignToRight = true;
+      this.$store.state.alignToLeft = false;
+      this.$store.state.alignToCenterHorizontal = false;
+      this.$store.state.alignToRight = true;
     },
     alignToCenterHorizontalFunction() {
-      this.alignToLeft = false;
-      this.alignToRight = false;
-      this.alignToCenterHorizontal = true;
+      this.$store.state.alignToLeft = false;
+      this.$store.state.alignToRight = false;
+      this.$store.state.alignToCenterHorizontal = true;
     },
-    noBorderFunction() {
-      this.hasBorder = false;
+    isLightFunction() {
+      this.$store.state.isDark = false;
+      this.$store.state.isLight = true;
     },
-    borderFunction() {
-      this.hasBorder = true;
-    },
-    colorLightFunction() {
-      this.isLight = true;
-    },
-    colorDarkFunction() {
-      this.isLight = false;
+    isDarkFunction() {
+      this.$store.state.isLight = false;
+      this.$store.state.isDark = true;
     }
   }
 });

@@ -64,11 +64,15 @@
     <img svg-inline v-else-if="design == 'E'" src="../assets/img/paperwalletemptyE.svg" />
     <img svg-inline v-else-if="design == 'F'" src="../assets/img/paperwalletemptyF.svg" />
     <div v-else class="w-100 custom-image-container">
-      <img svg-inline src="../assets/img/custom-paperwallet/paperwalletemptyFgLightBorder.svg" />
+      <img
+        :src="require('../assets/img/custom-paperwallet/paperwalletemptyFg' + (this.$store.state.isLight?'Light':'Dark') + '.svg')"
+        svg-inline
+      />
       <img
         v-if="this.$store.state.customImage"
         :src="this.$store.state.customImage"
         class="custom-image align-to-center-vertical"
+        v-bind:class="{  'align-to-top':this.$store.state.alignToTop, 'align-to-bottom': this.$store.state.alignToBottom,  'align-to-center-vertical':this.$store.state.alignToCenterVertical, 'fit-to-width':this.$store.state.fitToWidth, 'fit-to-height':this.$store.state.fitToHeight, 'align-to-left':this.$store.state.alignToLeft, 'align-to-right': this.$store.state.alignToRight,  'align-to-center-horizontal':this.$store.state.alignToCenterHorizontal}"
       />
     </div>
 
