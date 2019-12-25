@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-    customImage: require('../assets/img/bridge.jpg'),
+    customImage: require('../assets/img/custom-paperwallet/mountains.jpg'),
     fitToWidth: true,
     fitToHeight: false,
     alignToTop: false,
@@ -14,8 +14,7 @@ export const store = new Vuex.Store({
     alignToLeft: false,
     alignToRight: false,
     alignToCenterHorizontal: true,
-    isLight: true,
-    isDark: false,
+    fgColor: 'Blue'
   },
   mutations: {
     changeCustomImage(state, customImage) {
@@ -45,11 +44,8 @@ export const store = new Vuex.Store({
     changeAlignToCenterHorizontal(state, alignToCenterHorizontal) {
       state.alignToCenterHorizontal = alignToCenterHorizontal;
     },
-    changeIsLight(state, isLight) {
-      state.isLight = isLight;
-    },
-    changeIsDark(state, isDark) {
-      state.isDark = isDark;
+    changeFgColor(state, fgColor) {
+      state.fgColor = fgColor;
     },
   },
   getters: {
@@ -60,7 +56,6 @@ export const store = new Vuex.Store({
     alignToLeft: state => state.alignToLeft,
     alignToRight: state => state.alignToRight,
     alignToCenterHorizontal: state => state.alignToCenterHorizontal,
-    isLight: state => state.isLight,
-    isDark: state => state.isDark,
+    fgColor: state => state.fgColor,
   }
 });

@@ -44,45 +44,93 @@
                 v-bind:class="{  'align-to-top':this.$store.state.alignToTop, 'align-to-bottom': this.$store.state.alignToBottom,  'align-to-center-vertical':this.$store.state.alignToCenterVertical, 'fit-to-width':this.$store.state.fitToWidth, 'fit-to-height':this.$store.state.fitToHeight, 'align-to-left':this.$store.state.alignToLeft, 'align-to-right': this.$store.state.alignToRight,  'align-to-center-horizontal':this.$store.state.alignToCenterHorizontal}"
               />
               <img
-                :src="require('../assets/img/custom-paperwallet/paperwalletemptyFg' + (this.$store.state.isLight?'Light':'Dark') + '.svg')"
+                :src="require('../assets/img/custom-paperwallet/paperwalletemptyFg' + this.$store.state.fgColor + '.svg')"
                 alt="Custom Paperwallet Foreground"
                 class="w-100"
               />
             </div>
-            <div class="row d-flex justify-content-center align-items-center mt-4">
+            <div class="row d-flex justify-content-center align-items-center">
               <!-- Color -->
               <div>
-                <div class="col px-0">
+                <div class="col px-0 mt-4">
                   <h5 class="text-center w600">Color</h5>
-                  <div class="gradient-my-50 rounded-1 mx-3">
+                  <div class="rounded-1 mx-3">
                     <button
-                      v-on:click="isLightFunction()"
-                      class="btn p-1 rounded-1-left"
-                      v-bind:class=" this.$store.state.isLight?['btn-my border-1-primary']:''"
+                      v-on:click="fgColorFunction('Black')"
+                      class="btn color-button c-black p-1 rounded-1-left"
+                      v-bind:class="this.$store.state.fgColor=='Black'?['border-1-primary']:''"
                     >
-                      <img
-                        src="../assets/img/custom-paperwallet/icon-light.svg"
-                        alt="Fit to Width"
-                        class="icon-small m-2"
-                      />
+                      <div class="icon-small m-2">
+                        <img
+                          v-if="this.$store.state.fgColor=='Black'"
+                          src="../assets/img/custom-paperwallet/icon-tick.svg"
+                          alt="Tick"
+                          class="w-100 mb-2"
+                        />
+                      </div>
                     </button>
                     <button
-                      v-on:click="isDarkFunction()"
-                      class="btn p-1 rounded-1-right"
-                      v-bind:class="this.$store.state.isDark?['btn-my border-1-primary']:''"
+                      v-on:click="fgColorFunction('Blue')"
+                      class="btn color-button c-blue p-1 rounded-0"
+                      v-bind:class=" this.$store.state.fgColor=='Blue'?['border-1-primary']:''"
                     >
-                      <img
-                        src="../assets/img/custom-paperwallet/icon-dark.svg"
-                        alt="Fit to Height"
-                        class="icon-small m-2"
-                      />
+                      <div class="icon-small m-2">
+                        <img
+                          v-if="this.$store.state.fgColor=='Blue'"
+                          src="../assets/img/custom-paperwallet/icon-tick.svg"
+                          alt="Tick"
+                          class="w-100 mb-2"
+                        />
+                      </div>
+                    </button>
+                    <button
+                      v-on:click="fgColorFunction('Green')"
+                      class="btn color-button c-green p-1 rounded-0"
+                      v-bind:class="this.$store.state.fgColor=='Green'?['border-1-primary']:''"
+                    >
+                      <div class="icon-small m-2">
+                        <img
+                          v-if="this.$store.state.fgColor=='Green'"
+                          src="../assets/img/custom-paperwallet/icon-tick.svg"
+                          alt="Tick"
+                          class="w-100 mb-2"
+                        />
+                      </div>
+                    </button>
+                    <button
+                      v-on:click="fgColorFunction('Purple')"
+                      class="btn color-button c-purple p-1 rounded-0"
+                      v-bind:class="this.$store.state.fgColor=='Purple'?['border-1-primary']:''"
+                    >
+                      <div class="icon-small m-2">
+                        <img
+                          v-if="this.$store.state.fgColor=='Purple'"
+                          src="../assets/img/custom-paperwallet/icon-tick.svg"
+                          alt="Tick"
+                          class="w-100 mb-2"
+                        />
+                      </div>
+                    </button>
+                    <button
+                      v-on:click="fgColorFunction('Orange')"
+                      class="btn color-button c-orange p-1 rounded-1-right"
+                      v-bind:class="this.$store.state.fgColor=='Orange'?['border-1-primary']:''"
+                    >
+                      <div class="icon-small m-2">
+                        <img
+                          v-if="this.$store.state.fgColor=='Orange'"
+                          src="../assets/img/custom-paperwallet/icon-tick.svg"
+                          alt="Tick"
+                          class="w-100 mb-2"
+                        />
+                      </div>
                     </button>
                   </div>
                 </div>
               </div>
               <!-- Fit to Width or Height -->
               <div>
-                <div class="col px-0">
+                <div class="col px-0 mt-4">
                   <h5 class="text-center w600">Fit</h5>
                   <div class="gradient-my-50 rounded-1 mx-3">
                     <button
@@ -112,7 +160,7 @@
               </div>
               <!-- Align to Top, Bottom, V-Center or Left, Right, H-Center -->
               <div>
-                <div class="col px-0">
+                <div class="col px-0 mt-4">
                   <h5 class="w600 text-center">Alignment</h5>
                   <div class="gradient-my-50 rounded-1 mx-3">
                     <button
@@ -216,13 +264,8 @@ export default Vue.extend({
       this.$store.state.alignToRight = false;
       this.$store.state.alignToCenterHorizontal = true;
     },
-    isLightFunction() {
-      this.$store.state.isDark = false;
-      this.$store.state.isLight = true;
-    },
-    isDarkFunction() {
-      this.$store.state.isLight = false;
-      this.$store.state.isDark = true;
+    fgColorFunction(color) {
+      this.$store.state.fgColor = color;
     }
   }
 });

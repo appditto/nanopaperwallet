@@ -356,7 +356,6 @@ a:active {
 
 .custom-image {
       position: absolute;
-      padding-left: 2px;
       z-index: -1000;
 }
 
@@ -466,4 +465,28 @@ label{
 
 .border-1-primary{
       border: solid 1px rgba(map-get($theme-colors, primary), 1);
+}
+
+.c-blue{
+      background-color: rgba(32, 32, 181, 1);
+}
+
+.c-black{
+      background-color:black;
+}
+
+.c-green{
+      background-color:rgba(4, 153, 128, 1);
+}
+
+.c-purple{
+      background-color:rgba(93, 50, 214, 1);
+}
+
+.c-orange{
+      background-color:rgba(255, 126, 39, 1);
+}
+
+.op-75{
+      opacity: 0.75;
 }

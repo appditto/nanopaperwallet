@@ -14,7 +14,7 @@
               <option value="E">E</option>
               <option value="F">F</option>
               <option value="G">G</option>
-              <option value="Custom">Custom</option>
+              <option value="Custom">Yours</option>
             </select>
             <span class="h3 text-light">Add</span>
             <select class="mx-2 dropdown-header mb-2" id="amount" v-model="numPaperWallets">
@@ -160,20 +160,22 @@ export default Vue.extend({
 .addressText {
     position: absolute;
     font-family: 'Overpass Mono', monospace;
-    font-size: 5.7px;
-    right: 0.205in;
-    bottom: 0.5in;
+    font-size: 5.5px;
+    right: 0.22in;
+    bottom: 0.525in;
     text-align: center;
+    z-index: 3000;
 }
 
 .seedText {
     position: absolute;
     font-family: 'Overpass Mono', monospace;
-    font-size: 5.7px;
-    left: 1.02in;
-    bottom: 1.25in;
+    font-size: 5.5px;
+    left: 1in;
+    bottom: 1.275in;
     text-align: center;
     transform: rotate(90deg);
+    z-index: 3000;
 }
 
 .addressTextColoredA {
@@ -197,8 +199,11 @@ export default Vue.extend({
 .addressTextColoredF {
     color: #2677FF;
 }
+.addressTextColoredCustom {
+    color: #FFFFFF;
+}
 .textWhite {
-    color: #ffffff !important;
+    color: #FFFFFF;
 }
 
 .wallet-container {
@@ -214,6 +219,7 @@ export default Vue.extend({
     background-color: white;
     top: 0.68in;
     left: 0.28in;
+    z-index: 1000;
 }
 
 .address-qr {
@@ -223,20 +229,23 @@ export default Vue.extend({
     background-color: white;
     top: 0.68in;
     right: 0.24in;
+    z-index: 1000;
 }
 .address-logo {
     width: 0.3986in;
     height: 0.3986in;
     position: absolute;
     top: 1.05in;
-    left: 0.65in
+    left: 0.65in;
+    z-index: 2000;
 }
 .address-logo-right {
     width: 0.3986in;
     height: 0.3986in;
     position: absolute;
     top: 1.05in;
-    right: 0.58in
+    right: 0.58in;
+    z-index: 2000;
 }
 .custom-image-container {
       position: relative;
@@ -246,20 +255,60 @@ export default Vue.extend({
 .custom-image {
       position: absolute;
       width: 9.25in;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding-left: 1px;
-      padding-right: 3px;
-      padding-top: 3px;
-      padding-bottom: 9px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
-      margin-bottom: auto;
       z-index: -1000;
-}      
+}
+
+.align-to-top{
+      top: 0;
+      bottom: auto;
+      margin-top: 0;
+      margin-bottom: auto;
+}
+
+.align-to-bottom{
+      bottom: 0;
+      top: auto;
+      margin-bottom: 0;
+      margin-top: auto;
+}
+
+.align-to-center-vertical{
+      bottom: 0;
+      top: 0;
+      margin-bottom: auto;
+      margin-top: auto;
+}
+
+.align-to-left{
+      left: 0;
+      right: auto;
+      margin-left: 0;
+      margin-right: auto;
+}
+
+.align-to-right{
+      right: 0;
+      left: auto;
+      margin-right: 0;
+      margin-left: auto;
+}
+
+.align-to-center-horizontal{
+      right: 0;
+      left: 0;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.fit-to-width{
+      width: 100%;
+      height: auto;
+}
+
+.fit-to-height{
+      height: 100%;
+      width: auto;
+}  
         `
       ]);
     }

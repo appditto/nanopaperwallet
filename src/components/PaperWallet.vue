@@ -26,6 +26,12 @@
       class="address-logo z-1000"
       src="../assets/img/QRlogoA.svg"
     />
+    <img
+      svg-inline
+      v-else-if="design =='Custom'"
+      class="address-logo z-1000"
+      :src="require('../assets/img/custom-paperwallet/QRlogo' + this.$store.state.fgColor +  '.svg')"
+    />
     <img svg-inline v-else class="address-logo z-1000" src="../assets/img/QRlogoA.svg" />
 
     <!-- QR Code for ADDRESS -->
@@ -54,6 +60,12 @@
       class="address-logo-right z-1000"
       src="../assets/img/QRlogoA.svg"
     />
+    <img
+      svg-inline
+      v-else-if="design =='Custom'"
+      class="address-logo-right z-1000"
+      :src="require('../assets/img/custom-paperwallet/QRlogo' + this.$store.state.fgColor +  '.svg')"
+    />
     <img svg-inline v-else class="address-logo-right z-1000" src="../assets/img/QRlogoA.svg" />
 
     <!-- Paper Wallet Design -->
@@ -65,13 +77,13 @@
     <img svg-inline v-else-if="design == 'F'" src="../assets/img/paperwalletemptyF.svg" />
     <div v-else class="w-100 custom-image-container">
       <img
-        :src="require('../assets/img/custom-paperwallet/paperwalletemptyFg' + (this.$store.state.isLight?'Light':'Dark') + '.svg')"
+        :src="require('../assets/img/custom-paperwallet/paperwalletemptyFg' + this.$store.state.fgColor + '.svg')"
         svg-inline
       />
       <img
         v-if="this.$store.state.customImage"
         :src="this.$store.state.customImage"
-        class="custom-image align-to-center-vertical"
+        class="custom-image"
         v-bind:class="{  'align-to-top':this.$store.state.alignToTop, 'align-to-bottom': this.$store.state.alignToBottom,  'align-to-center-vertical':this.$store.state.alignToCenterVertical, 'fit-to-width':this.$store.state.fitToWidth, 'fit-to-height':this.$store.state.fitToHeight, 'align-to-left':this.$store.state.alignToLeft, 'align-to-right': this.$store.state.alignToRight,  'align-to-center-horizontal':this.$store.state.alignToCenterHorizontal}"
       />
     </div>
@@ -173,9 +185,9 @@ export default Vue.extend({
 .addressText {
   position: absolute;
   font-family: "Overpass Mono", monospace;
-  font-size: 5.7px;
-  right: 0.205in;
-  bottom: 0.72in;
+  font-size: 5.5px;
+  right: 0.22in;
+  bottom: 0.73in;
   text-align: center;
   font-weight: 700;
 }
@@ -187,9 +199,9 @@ export default Vue.extend({
 .seedText {
   position: absolute;
   font-family: "Overpass Mono", monospace;
-  font-size: 5.7px;
+  font-size: 5.5px;
   left: 1in;
-  bottom: 1.46in;
+  bottom: 1.485in;
   text-align: center;
   transform: rotate(90deg);
   font-weight: 700;
@@ -232,8 +244,8 @@ export default Vue.extend({
   width: 1.135in;
   height: 1.135in;
   background-color: white;
-  top: 0.68in;
-  left: 0.29in;
+  top: 0.67in;
+  left: 0.27in;
 }
 
 .address-qr {
