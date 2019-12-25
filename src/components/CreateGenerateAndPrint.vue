@@ -214,6 +214,7 @@ export default Vue.extend({
     width: 9.25in;
     height: 2.6in;
     position: relative;
+    overflow: hidden;
 }
 
 .wallet-qr {
@@ -255,13 +256,11 @@ export default Vue.extend({
       position: relative;
       overflow: hidden;
       width: 9.25in;
-      height: 2.6in;
+      height: 2.5in;
 }
 .custom-image {
       position: absolute;
       z-index: -1000;
-      max-height: 2.5in;
-      padding-bottom: 0.1in;
 }
 
 .align-to-top{
