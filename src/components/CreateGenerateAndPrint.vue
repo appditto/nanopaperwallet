@@ -260,6 +260,8 @@ export default Vue.extend({
 .custom-image {
       position: absolute;
       z-index: -1000;
+      max-height: 2.5in;
+      padding-bottom: 0.1in;
 }
 
 .align-to-top{

@@ -187,7 +187,7 @@ export default Vue.extend({
   font-family: "Overpass Mono", monospace;
   font-size: 5.5px;
   right: 0.22in;
-  bottom: 0.73in;
+  bottom: 0.72in;
   text-align: center;
   font-weight: 700;
 }
