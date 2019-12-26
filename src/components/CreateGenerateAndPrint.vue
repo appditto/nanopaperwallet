@@ -183,6 +183,26 @@ export default Vue.extend({
     z-index: 3000;
 }
 
+.safariAddressText {
+  position: absolute;
+  font-family: "Overpass Mono", monospace;
+  font-size: 5.4px;
+  right: 0.27in;
+  bottom: 0.55in;
+  text-align: center;
+  font-weight: 700;
+}
+
+.safariSeedText {
+  position: absolute;
+  font-family: "Overpass Mono", monospace;
+  font-size: 5.4px;
+  left: 1.05in;
+  bottom: 1.3in;
+  text-align: center;
+  transform: rotate(90deg);
+  font-weight: 700;
+}
 .addressTextColoredA {
     color: #2677FF;
 }

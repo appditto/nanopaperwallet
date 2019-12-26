@@ -215,16 +215,6 @@ export default Vue.extend({
   font-weight: 700;
 }
 
-.safariAddressText {
-  position: absolute;
-  font-family: "Overpass Mono", monospace;
-  font-size: 1px;
-  right: 0.22in;
-  bottom: 0.72in;
-  text-align: center;
-  font-weight: 700;
-}
-
 .seedText {
   position: absolute;
   font-family: "Overpass Mono", monospace;
@@ -236,12 +226,22 @@ export default Vue.extend({
   font-weight: 700;
 }
 
+.safariAddressText {
+  position: absolute;
+  font-family: "Overpass Mono", monospace;
+  font-size: 5.4px;
+  right: 0.27in;
+  bottom: 0.75in;
+  text-align: center;
+  font-weight: 700;
+}
+
 .safariSeedText {
   position: absolute;
   font-family: "Overpass Mono", monospace;
-  font-size: 1px;
-  left: 1in;
-  bottom: 1.485in;
+  font-size: 5.4px;
+  left: 1.05in;
+  bottom: 1.49in;
   text-align: center;
   transform: rotate(90deg);
   font-weight: 700;
