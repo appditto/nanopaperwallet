@@ -14,7 +14,8 @@ export const store = new Vuex.Store({
     alignToLeft: false,
     alignToRight: false,
     alignToCenterHorizontal: true,
-    fgColor: 'Blue'
+    fgColor: 'Blue',
+    isSafari: false
   },
   mutations: {
     changeCustomImage(state, customImage) {
@@ -47,6 +48,9 @@ export const store = new Vuex.Store({
     changeFgColor(state, fgColor) {
       state.fgColor = fgColor;
     },
+    changerIsSafari(state, isSafari) {
+      state.isSafari = isSafari;
+    },
   },
   getters: {
     customImage: state => state.customImage,
@@ -57,5 +61,6 @@ export const store = new Vuex.Store({
     alignToRight: state => state.alignToRight,
     alignToCenterHorizontal: state => state.alignToCenterHorizontal,
     fgColor: state => state.fgColor,
+    isSafari: state => state.isSafari,
   }
 });

@@ -89,8 +89,16 @@
     </div>
 
     <!-- Address -->
-    <div class="addressText z-1000" v-html="twoLineAddress()" />
-    <div class="seedText z-1000" v-html="seedTextStyled()" />
+    <div
+      v-bind:class="this.$store.state.isSafari?'safariAddressText':'addressText'"
+      class="z-1000"
+      v-html="twoLineAddress()"
+    />
+    <div
+      v-bind:class="this.$store.state.isSafari?'safariSeedText':'seedText'"
+      class="z-1000"
+      v-html="seedTextStyled()"
+    />
   </div>
   <div class="wallet-container" v-else>
     <img svg-inline src="../assets/img/paperwalletinstructions.svg" />
@@ -207,10 +215,31 @@ export default Vue.extend({
   font-weight: 700;
 }
 
+.safariAddressText {
+  position: absolute;
+  font-family: "Overpass Mono", monospace;
+  font-size: 1px;
+  right: 0.22in;
+  bottom: 0.72in;
+  text-align: center;
+  font-weight: 700;
+}
+
 .seedText {
   position: absolute;
   font-family: "Overpass Mono", monospace;
   font-size: 5.5px;
+  left: 1in;
+  bottom: 1.485in;
+  text-align: center;
+  transform: rotate(90deg);
+  font-weight: 700;
+}
+
+.safariSeedText {
+  position: absolute;
+  font-family: "Overpass Mono", monospace;
+  font-size: 1px;
   left: 1in;
   bottom: 1.485in;
   text-align: center;
