@@ -152,7 +152,8 @@ export default Vue.extend({
 @media print{@page {size: landscape}}
 @media print {
     body { 
-        -webkit-print-color-adjust: exact; 
+        -webkit-print-color-adjust: exact!important; 
+        color-adjust: exact!important;
       }
 }
 @page  
@@ -176,7 +177,7 @@ export default Vue.extend({
     font-family: 'Overpass Mono', monospace;
     font-size: 5.5px;
     left: 1in;
-    bottom: 1.275in;
+    bottom: 1.29in;
     text-align: center;
     transform: rotate(90deg);
     z-index: 3000;
@@ -203,11 +204,35 @@ export default Vue.extend({
 .addressTextColoredF {
     color: #2677FF;
 }
-.addressTextColoredCustom {
-    color: #FFFFFF;
+
+.cbgBlue{
+    color:transparent; 
+    text-shadow:0 0 0 #fff; 
+    box-shadow:0 0 0 1000px #2020B5 inset; 
 }
-.textWhite {
-    color: #FFFFFF;
+
+.cbgBlack{
+    color:transparent; 
+    text-shadow:0 0 0 #fff; 
+    box-shadow:0 0 0 1000px #000000 inset; 
+}
+
+.cbgGreen{
+    color:transparent; 
+    text-shadow:0 0 0 #fff; 
+    box-shadow:0 0 0 1000px #035E5E inset;
+}
+
+.cbgPurple{
+    color:transparent; 
+    text-shadow:0 0 0 #fff; 
+    box-shadow:0 0 0 1000px #5D32D6 inset;
+}
+
+.cbgOrange{
+    color:transparent; 
+    text-shadow:0 0 0 #fff; 
+    box-shadow:0 0 0 1000px #ED6435 inset;
 }
 
 .wallet-container {
@@ -299,8 +324,8 @@ export default Vue.extend({
 }
 
 .align-to-center-horizontal{
-      right: 0;
-      left: 0;
+      right: -9999px;;
+      left: -9999px;;
       margin-right: auto;
       margin-left: auto;
 }

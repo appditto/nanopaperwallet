@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
-    <title>icon-border-yes</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <rect id="path-1" x="0" y="0" width="16" height="16"></rect>
-    </defs>
-    <g id="icon-border-yes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <mask id="mask-2" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-        <g id="Rectangle"></g>
-        <path d="M0.575378798,10.1213203 C-0.0104076401,9.53553391 -0.0104076401,8.58578644 0.575378798,8 C1.16116524,7.41421356 2.1109127,7.41421356 2.69669914,8 L5.17086577,10.4741666 L13.3033009,2.34314575 C13.8890873,1.75735931 14.8388348,1.75735931 15.4246212,2.34314575 C16.0104076,2.92893219 16.0104076,3.87867966 15.4246212,4.46446609 L6.23223305,13.6568542 L6.23223305,13.6568542 C5.64644661,14.2426407 4.69669914,14.2426407 4.1109127,13.6568542 L0.575378798,10.1213203 Z" id="Path" fill="#FFFFFF" mask="url(#mask-2)"></path>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"><defs><path id="A" d="M0 0h16v16H0z"/></defs><g fill-rule="evenodd"><mask id="B" fill="#fff"><use xlink:href="#A"/></mask><path d="M.575 10.12A1.5 1.5 0 0 1 2.697 8l2.474 2.474 8.132-8.13a1.5 1.5 0 0 1 2.121 2.121l-9.192 9.192a1.5 1.5 0 0 1-2.121 0L.575 10.12z" fill="#fff" mask="url(#B)"/></g></svg>

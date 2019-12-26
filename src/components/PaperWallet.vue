@@ -75,7 +75,7 @@
     <img svg-inline v-else-if="design == 'D'" src="../assets/img/paperwalletemptyD.svg" />
     <img svg-inline v-else-if="design == 'E'" src="../assets/img/paperwalletemptyE.svg" />
     <img svg-inline v-else-if="design == 'F'" src="../assets/img/paperwalletemptyF.svg" />
-    <div v-else class="w-100 custom-image-container">
+    <div v-else-if="design == 'Custom'" class="w-100 custom-image-container">
       <img
         :src="require('../assets/img/custom-paperwallet/paperwalletemptyFg' + this.$store.state.fgColor + '.svg')"
         svg-inline
@@ -89,16 +89,8 @@
     </div>
 
     <!-- Address -->
-    <div
-      v-bind:class="{'textWhite':design == 'Custom'}"
-      class="z-1000 addressText"
-      v-html="twoLineAddress()"
-    />
-    <div
-      v-bind:class="{'textWhite':design == 'Custom'}"
-      class="seedText z-1000"
-      v-html="seedTextStyled()"
-    />
+    <div class="addressText z-1000" v-html="twoLineAddress()" />
+    <div class="seedText z-1000" v-html="seedTextStyled()" />
   </div>
   <div class="wallet-container" v-else>
     <img svg-inline src="../assets/img/paperwalletinstructions.svg" />
@@ -124,36 +116,59 @@ export default Vue.extend({
   },
   methods: {
     twoLineAddress() {
-      return `
+      if (this.design == "Custom") {
+        return `
+            <span class="cbg${
+              this.$store.state.fgColor
+            }">${this.address.substring(0, 33)}</span><br/>
+            <span class="cbg${
+              this.$store.state.fgColor
+            }">${this.address.substring(33)}</span>
+          `;
+      } else {
+        return `
             <span class="addressTextColored${
               this.design
             }">${this.address.substring(0, 14)}</span>${this.address.substring(
-        14,
-        33
-      )}<br/>${this.address.substring(33, 58)}<span class="addressTextColored${
-        this.design
-      }">${this.address.substring(58)}</span>
+          14,
+          33
+        )}<br/>${this.address.substring(
+          33,
+          58
+        )}<span class="addressTextColored${
+          this.design
+        }">${this.address.substring(58)}</span>
           `;
+      }
     },
     seedTextStyled() {
       let retLineOne = "";
       let retLineTwo = "";
-      for (let i = 0; i < this.seed.length; i++) {
-        if (!isNaN(parseInt(this.seed[i], 10))) {
-          if (i > 31) {
-            retLineTwo = retLineTwo + this.seed[i];
+      if (this.design == "Custom") {
+        retLineOne = `<span class="cbg${
+          this.$store.state.fgColor
+        }">${this.seed.substring(0, 32)}</span>`;
+        retLineTwo = `<span class="cbg${
+          this.$store.state.fgColor
+        }">${this.seed.substring(32)}</span>`;
+      } else {
+        for (let i = 0; i < this.seed.length; i++) {
+          if (!isNaN(parseInt(this.seed[i], 10))) {
+            if (i > 31) {
+              retLineTwo = retLineTwo + this.seed[i];
+            } else {
+              retLineOne = retLineOne + this.seed[i];
+            }
           } else {
-            retLineOne = retLineOne + this.seed[i];
-          }
-        } else {
-          if (i > 31) {
-            retLineTwo =
-              retLineTwo +
-              `<span class="addressTextColored${this.design}">${this.seed[i]}</span>`;
-          } else {
-            retLineOne =
-              retLineOne +
-              `<span class="addressTextColored${this.design}">${this.seed[i]}</span>`;
+            if (i > 31) {
+              retLineTwo =
+                retLineTwo +
+                `<span class="addressTextColored${this.design}">${this.seed[i]}</span>`;
+            } else {
+              retLineOne =
+                retLineOne +
+                `<span class="addressTextColored${this.design}">${this.seed[i]}</span>`;
+            }
           }
         }
       }
@@ -192,10 +207,6 @@ export default Vue.extend({
   font-weight: 700;
 }
 
-.textWhite {
-  color: #ffffff !important;
-}
-
 .seedText {
   position: absolute;
   font-family: "Overpass Mono", monospace;
@@ -229,7 +240,24 @@ export default Vue.extend({
 .addressTextColoredF {
   color: #2677ff;
 }
-.addressTextColoredCustom {
+
+.cbgBlue {
+  color: #ffffff;
+}
+
+.cbgBlack {
+  color: #ffffff;
+}
+
+.cbgGreen {
+  color: #ffffff;
+}
+
+.cbgPurple {
+  color: #ffffff;
+}
+
+.cbgOrange {
   color: #ffffff;
 }
 

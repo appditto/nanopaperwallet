@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
-    <title>icon-align-to-right</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icon-align-to-right" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M15.25,0 C15.6642136,-7.6089797e-17 16,0.335786438 16,0.75 L16,15.25 C16,15.6642136 15.6642136,16 15.25,16 C14.8357864,16 14.5,15.6642136 14.5,15.25 L14.5,0.75 C14.5,0.335786438 14.8357864,7.6089797e-17 15.25,0 Z M13.5,4 L13.5,12 L1,12 C0.44771525,12 6.76353751e-17,11.5522847 0,11 L0,5 C-6.76353751e-17,4.44771525 0.44771525,4 1,4 L13.5,4 Z" id="Combined-Shape" fill="#FFFFFF"></path>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M15.25 0a.75.75 0 0 1 .75.75v14.5a.75.75 0 1 1-1.5 0V.75a.75.75 0 0 1 .75-.75zM13.5 4v8H1a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h12.5z" fill="#fff" fill-rule="evenodd"/></svg>

@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
-    <title>icon-align-to-top</title>
-    <desc>Created with Sketch.</desc>
-    <g id="icon-align-to-top" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M15.25,0 C15.6642136,-7.6089797e-17 16,0.335786438 16,0.75 L16,15.25 C16,15.6642136 15.6642136,16 15.25,16 C14.8357864,16 14.5,15.6642136 14.5,15.25 L14.5,0.75 C14.5,0.335786438 14.8357864,7.6089797e-17 15.25,0 Z M13.5,4 L13.5,12 L1,12 C0.44771525,12 6.76353751e-17,11.5522847 0,11 L0,5 C-6.76353751e-17,4.44771525 0.44771525,4 1,4 L13.5,4 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(8.000000, 8.000000) rotate(-90.000000) translate(-8.000000, -8.000000) "></path>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M0 .75A.75.75 0 0 1 .75 0h14.5a.75.75 0 1 1 0 1.5H.75A.75.75 0 0 1 0 .75zM4 2.5h8V15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2.5z" fill="#fff" fill-rule="evenodd"/></svg>
