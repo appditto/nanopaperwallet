@@ -36,7 +36,7 @@
         </div>
         <div class="col-12">
           <div class="row d-flex justify-content-center align-items-center my-4 pb-3">
-            <div class="text-light text-center w300">Made by</div>
+            <span class="text-light text-center w300">Made by</span>
             <a class="mx-1" target="_blank" href="https://appditto.com">
               <img
                 class="icon-4 ml-1 grow mb-1"
