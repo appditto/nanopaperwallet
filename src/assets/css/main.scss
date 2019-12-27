@@ -124,22 +124,22 @@ body {
 
 .icon {
       width: 6rem;
-      height: auto;
+      height: 100%;
 }
 
 .icon-2 {
       width: 3rem;
-      height: auto;
+      height: 100%;
 }
 
 .icon-3 {
       width: 2.2rem;
-      height: auto;
+      height: 100%;
 }
 
 .icon-4 {
       height: 1.7rem;
-      width: auto
+      width: auto;
 }
 
 .bg-donate {
@@ -227,6 +227,7 @@ body {
 @include respond-above(md) {
       .logo {
             width: 10rem;
+            height: 100%;
       }
 }
 
