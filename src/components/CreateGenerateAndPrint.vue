@@ -303,6 +303,12 @@ export default Vue.extend({
       width: 9.25in;
       height: 2.5in;
 }
+.image-container {
+      position: relative;
+      overflow: hidden;
+      width: 9.25in;
+      height: 2.5in;
+}
 .custom-image {
       position: absolute;
       z-index: -1000;
