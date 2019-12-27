@@ -347,7 +347,13 @@ a:active {
       color: white;
 }
 
-.custom-image-container, .image-container {
+.custom-image-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+}
+
+.image-container {
       position: relative;
       overflow: hidden;
       width: 100%;
