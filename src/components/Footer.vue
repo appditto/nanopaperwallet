@@ -34,12 +34,12 @@
             </a>
           </p>
         </div>
-        <div class="col-12">
-          <div class="row d-flex justify-content-center align-items-center my-4 pb-3">
-            <span class="text-light text-center w300">Made by</span>
-            <a class="mx-1" target="_blank" href="https://appditto.com">
+        <div class="col-12 my-4">
+          <div class="row justify-content-center d-flex">
+            <span class="text-light text-center w300 m-1">Made by</span>
+            <a class="grow m-1" target="_blank" href="https://appditto.com">
               <img
-                class="icon-4 ml-1 grow mb-1"
+                class="icon-4"
                 alt="Appditto Logo"
                 src="../assets/img/appditto-horizontal-white.svg"
               />
