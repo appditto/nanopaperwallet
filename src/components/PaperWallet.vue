@@ -77,14 +77,17 @@
     <img svg-inline v-else-if="design == 'F'" src="../assets/img/paperwalletemptyF.svg" />
     <div v-else-if="design == 'Custom'" class="w-100 custom-image-container">
       <img
-        :src="require('../assets/img/custom-paperwallet/paperwalletemptyFg' + this.$store.state.fgColor + '.svg')"
-        svg-inline
-      />
-      <img
         v-if="this.$store.state.customImage"
         :src="this.$store.state.customImage"
+        alt="Custom Image"
         class="custom-image"
         v-bind:class="{  'align-to-top':this.$store.state.alignToTop, 'align-to-bottom': this.$store.state.alignToBottom,  'align-to-center-vertical':this.$store.state.alignToCenterVertical, 'fit-to-width':this.$store.state.fitToWidth, 'fit-to-height':this.$store.state.fitToHeight, 'align-to-left':this.$store.state.alignToLeft, 'align-to-right': this.$store.state.alignToRight,  'align-to-center-horizontal':this.$store.state.alignToCenterHorizontal}"
+      />
+      <img
+        alt="Custom Paperwallet Foreground"
+        class="w-100"
+        :src="require('../assets/img/custom-paperwallet/paperwalletemptyFg' + this.$store.state.fgColor + '.svg')"
+        svg-inline
       />
     </div>
 
