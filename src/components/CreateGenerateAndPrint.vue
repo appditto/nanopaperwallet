@@ -300,13 +300,14 @@ export default Vue.extend({
 .custom-image-container {
       position: relative;
       overflow: hidden;
-      width: 9.25in;
+      width: 100%;
       height: 2.5in;
 }
+
 .image-container {
       position: relative;
       overflow: hidden;
-      width: 9.25in;
+      width: 100%;
       height: 2.5in;
 }
 .custom-image {
