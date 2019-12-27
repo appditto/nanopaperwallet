@@ -38,11 +38,7 @@
           <div class="row justify-content-center align-items-center d-flex pb-3">
             <span class="text-light text-center w300">Made by</span>
             <a class="grow mx-2" target="_blank" href="https://appditto.com">
-              <img
-                class="icon-4"
-                alt="Appditto Logo"
-                src="../assets/img/appditto-horizontal-white.svg"
-              />
+              <img class="logo-2" src="../assets/img/appditto-logo.svg" />
             </a>
           </div>
         </div>
