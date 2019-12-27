@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import Vue from 'vue'
 import App from './App.vue'
 import { store } from './util/store'
@@ -8,7 +9,7 @@ import './assets/img/index.js'
 let v = new Vue({
   el: '#app',
   store,
-  router,  
+  router,
   components: { App },
   template: '<App/>',
   render: h => h(App),
