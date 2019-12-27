@@ -15,7 +15,7 @@
           >Start Creating</router-link>
         </div>
         <div class="col-12 col-lg-8 pl-4 pl-md-5 pr-0">
-          <img class="w-100" src="../assets/img/bg-hero.svg" />
+          <img class="w-100 h-100" src="../assets/img/bg-hero.svg" />
         </div>
         <div class="col-12 col-lg-4 align-self-center mt-4 d-block d-lg-none">
           <div class="ml-herotext px-0">
