@@ -33,16 +33,18 @@
               <span class="w700">u/Rockmsockmjesus</span>.
             </a>
           </p>
-          <p class="text-light text-center w300 py-4">
-            Made by
-            <a class="pb-4" target="_blank" href="https://appditto.com">
+        </div>
+        <div class="col-12">
+          <div class="row d-flex justify-content-center align-items-center my-4 pb-3">
+            <div class="text-light text-center w300">Made by</div>
+            <a class="mx-1" target="_blank" href="https://appditto.com">
               <img
                 class="icon-4 ml-1 grow mb-1"
-                alt="Appditto Log"
+                alt="Appditto Logo"
                 src="../assets/img/appditto-horizontal-white.svg"
               />
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </div>
