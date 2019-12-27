@@ -70,22 +70,22 @@
 
     <!-- Paper Wallet Design -->
     <div v-if="design == 'A'" class="w-100 image-container">
-      <img svg-inline src="../assets/img/paperwalletemptyA.svg" />
+      <img class="w-100" svg-inline src="../assets/img/paperwalletemptyA.svg" />
     </div>
     <div v-else-if="design == 'B'" class="w-100 image-container">
-      <img svg-inline src="../assets/img/paperwalletemptyB.svg" />
+      <img class="w-100" svg-inline src="../assets/img/paperwalletemptyB.svg" />
     </div>
     <div v-else-if="design == 'C'" class="w-100 image-container">
-      <img svg-inline src="../assets/img/paperwalletemptyC.svg" />
+      <img class="w-100" svg-inline src="../assets/img/paperwalletemptyC.svg" />
     </div>
     <div v-else-if="design == 'D'" class="w-100 image-container">
-      <img svg-inline src="../assets/img/paperwalletemptyD.svg" />
+      <img class="w-100" svg-inline src="../assets/img/paperwalletemptyD.svg" />
     </div>
     <div v-else-if="design == 'E'" class="w-100 image-container">
-      <img svg-inline src="../assets/img/paperwalletemptyE.svg" />
+      <img class="w-100" svg-inline src="../assets/img/paperwalletemptyE.svg" />
     </div>
     <div v-else-if="design == 'F'" class="w-100 image-container">
-      <img svg-inline src="../assets/img/paperwalletemptyF.svg" />
+      <img class="w-100" svg-inline src="../assets/img/paperwalletemptyF.svg" />
     </div>
 
     <div v-else-if="design == 'Custom'" class="w-100 custom-image-container">
@@ -118,7 +118,7 @@
   </div>
   <div class="wallet-container" v-else>
     <div class="w-100 image-container">
-      <img svg-inline src="../assets/img/paperwalletinstructions.svg" />
+      <img class="w-100" svg-inline src="../assets/img/paperwalletinstructions.svg" />
     </div>
   </div>
 </template>
