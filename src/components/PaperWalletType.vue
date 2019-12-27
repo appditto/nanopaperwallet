@@ -4,7 +4,7 @@
     v-bind:class="type != 'Custom'?'col-md-6 px-4':'make-your-own-section py-4'"
   >
     <div v-if="type == 'Custom'" class="row d-flex justify-content-center align-items-center mb-4">
-      <h4 class="w600 text-center mx-1">Make Your Own:</h4>
+      <h4 class="w600 text-center mx-1">Or make a custom design:</h4>
       <input
         accept="image/png, image/jpeg, .svg"
         name="file"

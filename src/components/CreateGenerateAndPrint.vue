@@ -14,7 +14,7 @@
               <option value="E">E</option>
               <option value="F">F</option>
               <option value="G">G</option>
-              <option value="Custom">Yours</option>
+              <option value="Custom">Custom</option>
             </select>
             <span class="h3 text-light">Add</span>
             <select class="mx-2 dropdown-header mb-2" id="amount" v-model="numPaperWallets">
