@@ -28,7 +28,7 @@
         </div>
         <div class="col-12">
           <p class="text-light text-center w300 mb-0">
-            © 2019. For
+            © 2020. For
             <a target="_blank" href="https://reddit.com/u/rockmsockmjesus">
               <span class="w700">u/Rockmsockmjesus</span>.
             </a>
