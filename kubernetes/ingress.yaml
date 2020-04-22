@@ -1,0 +1,39 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: nanopaperwallet-ingress
+  namespace: nanopaperwallet
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+        real_ip_header CF-Connecting-IP;
+spec:
+  tls:
+  - hosts:
+    - nanopaperwallet.com
+    - www.nanopaperwallet.com
+    secretName: nanopaperwallet-com-server-secret
+  rules:
+  - host: nanopaperwallet.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: nanopaperwallet
+          servicePort: 5000
+      - path: /offline
+        backend:
+          serviceName: nanopaperwallet-offline
+          servicePort: 80
+  - host: www.nanopaperwallet.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: nanopaperwallet
+          servicePort: 5000
+      - path: /offline
+        backend:
+          serviceName: nanopaperwallet-offline
+          servicePort: 80

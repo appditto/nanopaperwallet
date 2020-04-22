@@ -8,11 +8,8 @@ itsdangerous
 click
 python-dotenv
 
-# Database
-peewee
-
 # Deployment
-uwsgi
+gunicorn
 
 # Webpack
 flask-webpack-fork

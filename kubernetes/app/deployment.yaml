@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nanopaperwallet-app
+  namespace: nanopaperwallet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nanopaperwallet-app
+  template:
+    metadata:
+      labels:
+        app: nanopaperwallet-app
+    spec:
+      containers:
+      - name: nanopaperwallet-app
+        image: replaceme
+        ports:
+        - containerPort: 5000
+          name: app
+        env:
+          - name: FLASK_APP
+            value: autoapp.py
+          - name: FLASK_DEBUG
+            value: "0"
+          - name: APP_SECRET
+            value: ABCD1234

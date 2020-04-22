@@ -2,7 +2,7 @@ from flask import Flask
 from app.settings import AppConfig
 from app.controllers import HomeController
 from app.extensions import webpack, cors
-from werkzeug.contrib.fixers import ProxyFix
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 def create_app(config_object=AppConfig):
     """Application Factory Pattern"""

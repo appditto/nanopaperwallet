@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nanopaperwallet-offline
+  namespace: nanopaperwallet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nanopaperwallet-offline
+  template:
+    metadata:
+      labels:
+        app: nanopaperwallet-offline
+    spec:
+      containers:
+      - name: nanopaperwallet-offline
+        image: replaceme
+        ports:
+        - containerPort: 80
+          name: app
