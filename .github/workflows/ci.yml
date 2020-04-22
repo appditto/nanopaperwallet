@@ -21,37 +21,13 @@ jobs:
 
       - name: Build and tag
         if: success()
-        run: docker build -t appditto/nanopaperwallet:${BRANCH_NAME}-${{ env.GITHUB_RUN_ID }} -f Dockerfile.app .
+        run: docker build -t appditto/nanopaperwallet:${BRANCH_NAME}-${{ env.GITHUB_RUN_ID }} .
 
       - name: Push image   
         if: success()
         uses: actions-hub/docker@master
         with:
           args: push appditto/nanopaperwallet:${BRANCH_NAME}-${{ env.GITHUB_RUN_ID }}
-
-  build_and_publish_offline:
-    name: Build and Publish Offline Image
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_RUN_ID: ${{ github.run_id }}    
-    steps:
-      - uses: nelonoel/branch-name@v1
-      - uses: actions/checkout@master   
-      - name: Login to registry
-        uses: actions-hub/docker/login@master
-        env:
-          DOCKER_USERNAME: ${{ secrets.DOCKER_USER }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-
-      - name: Build and tag
-        if: success()
-        run: docker build -t appditto/nanopaperwallet:offline-${BRANCH_NAME}-${{ env.GITHUB_RUN_ID }} -f Dockerfile.nginx .
-
-      - name: Push image   
-        if: success()
-        uses: actions-hub/docker@master
-        with:
-          args: push appditto/nanopaperwallet:offline-${BRANCH_NAME}-${{ env.GITHUB_RUN_ID }}
 
   deploy_image:
     name: Deploy app
@@ -78,29 +54,3 @@ jobs:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
         with:
           args: apply -f ./kubernetes/app/deployment-k.yaml
-
-  deploy_offline_image:
-    name: Deploy app
-    needs: build_and_publish_offline
-    runs-on: ubuntu-latest
-    env:
-      GITHUB_RUN_ID: ${{ github.run_id }}
-    steps:
-      - uses: nelonoel/branch-name@v1
-      - uses: actions/checkout@master   
-      - uses: imranismail/setup-kustomize@v1
-        with:
-          kustomize-version: "3.5.4"
-
-      - name: Set image
-        working-directory: ./kubernetes/offline
-        run: |
-          kustomize edit set image replaceme=appditto/nanopaperwallet:offline-${BRANCH_NAME}-${{ env.GITHUB_RUN_ID }}
-          kustomize build . > deployment-k.yaml
-
-      - name: Deploy image to k8s cluster
-        uses: steebchen/kubectl@master
-        env:
-          KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
-        with:
-          args: apply -f ./kubernetes/offline/deployment-k.yaml

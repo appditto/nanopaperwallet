@@ -7,7 +7,7 @@
       <a
         v-if="showDownloadButton"
         class="btn btn-lg btn-my btn-my-shadow text-light w600 px-3 px-lg-4 d-none d-sm-block"
-        href="/offline/nanopaperwallet_01.zip"
+        href="/static/build/assets/offline/nanopaperwallet_01.zip"
       >Download the Generator</a>
       <router-link
         v-if="showRedeemButton"

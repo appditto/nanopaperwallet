@@ -22,10 +22,6 @@ spec:
         backend:
           serviceName: nanopaperwallet
           servicePort: 5000
-      - path: /offline
-        backend:
-          serviceName: nanopaperwallet-offline
-          servicePort: 80
   - host: www.nanopaperwallet.com
     http:
       paths:
@@ -33,7 +29,3 @@ spec:
         backend:
           serviceName: nanopaperwallet
           servicePort: 5000
-      - path: /offline
-        backend:
-          serviceName: nanopaperwallet-offline
-          servicePort: 80
