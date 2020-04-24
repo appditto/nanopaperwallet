@@ -49,7 +49,7 @@ jobs:
           kustomize build . > deployment-k.yaml
 
       - name: Deploy image to k8s cluster
-        uses: steebchen/kubectl@master
+        uses: bbedward/kubectl@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
         with:
