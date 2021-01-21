@@ -40,7 +40,7 @@
     "qrcode-svg": "^1.0.0",
     "sass-loader": "^7.0.3",
     "simple-modal-vue": "^1.0.12",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "ts-loader": "^5.4.5",
     "typescript": "^3.5.1",
     "uglifyjs-webpack-plugin": "^1.2.5",
