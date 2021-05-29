@@ -55,7 +55,7 @@
     "vue-template-compiler": "^2.6.10",
     "vuex": "^3.1.1",
     "webpack-cli": "^3.3.2",
-    "ws": "^5.2.0"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
