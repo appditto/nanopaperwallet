@@ -2,16 +2,16 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build_and_publish:
     name: Build and Publish Image
     runs-on: ubuntu-latest
     env:
-      GITHUB_RUN_ID: ${{ github.run_id }}    
+      GITHUB_RUN_ID: ${{ github.run_id }}
     steps:
-      - uses: actions/checkout@master   
+      - uses: actions/checkout@master
       - name: Login to registry
         uses: actions-hub/docker/login@master
         env:
@@ -32,7 +32,7 @@ jobs:
         if: success()
         run: docker build -t appditto/nanopaperwallet:${{ env.BRANCH_NAME }}-${{ env.GITHUB_RUN_ID }} .
 
-      - name: Push image   
+      - name: Push image
         if: success()
         uses: actions-hub/docker@master
         with:
@@ -45,7 +45,7 @@ jobs:
     env:
       GITHUB_RUN_ID: ${{ github.run_id }}
     steps:
-      - uses: actions/checkout@master   
+      - uses: actions/checkout@master
       - uses: imranismail/setup-kustomize@v1
         with:
           kustomize-version: "3.5.4"
@@ -61,7 +61,7 @@ jobs:
         run: echo "BRANCH_NAME=$(echo ${GITHUB_HEAD_REF} | tr / -)" >> $GITHUB_ENV
 
       - name: Set image
-        working-directory: ./kubernetes/app
+        working-directory: ./kubernetes
         run: |
           kustomize edit set image replaceme=appditto/nanopaperwallet:${{ env.BRANCH_NAME }}-${{ env.GITHUB_RUN_ID }}
           kustomize build . > deployment-k.yaml
