@@ -14,15 +14,22 @@ spec:
         app: nanopaperwallet-app
     spec:
       containers:
-      - name: nanopaperwallet-app
-        image: replaceme
-        ports:
-        - containerPort: 5000
-          name: app
-        env:
-          - name: FLASK_APP
-            value: autoapp.py
-          - name: FLASK_DEBUG
-            value: "0"
-          - name: APP_SECRET
-            value: ABCD1234
+        - name: nanopaperwallet-app
+          image: replaceme
+          resources:
+            requests:
+              cpu: 250m
+              memory: 250Mi
+            limits:
+              cpu: 500m
+              memory: 750Mi
+          ports:
+            - containerPort: 5000
+              name: app
+          env:
+            - name: FLASK_APP
+              value: autoapp.py
+            - name: FLASK_DEBUG
+              value: "0"
+            - name: APP_SECRET
+              value: ABCD1234
