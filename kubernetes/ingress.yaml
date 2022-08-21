@@ -8,24 +8,14 @@ metadata:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
     nginx.ingress.kubernetes.io/configuration-snippet: |
       real_ip_header CF-Connecting-IP;
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
 spec:
   tls:
     - hosts:
         - nanopaperwallet.com
-        - www.nanopaperwallet.com
       secretName: nanopaperwallet-com-server-secret
   rules:
     - host: nanopaperwallet.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: nanopaperwallet
-                port:
-                  number: 5000
-    - host: www.nanopaperwallet.com
       http:
         paths:
           - path: /
