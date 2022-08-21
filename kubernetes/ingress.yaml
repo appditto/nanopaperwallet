@@ -12,9 +12,20 @@ spec:
   tls:
     - hosts:
         - nanopaperwallet.com
+        - www.nanopaperwallet.com
       secretName: nanopaperwallet-com-server-secret
   rules:
     - host: nanopaperwallet.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nanopaperwallet
+                port:
+                  number: 5000
+    - host: www.nanopaperwallet.com
       http:
         paths:
           - path: /
