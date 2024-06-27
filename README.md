@@ -1,5 +1,7 @@
 # A website for creating paper wallets for NANO
 
+nanopaperwallet.com
+
 # Development
 
 ```
